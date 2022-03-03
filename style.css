@@ -1,0 +1,326 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+body,html{
+    overflow-x:hidden;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-style: normal;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+}
+
+img{
+    border:none;
+    max-width:100%;
+
+}
+
+iframe{
+    border: none;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.img-right{
+    display: block;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.img-left {
+    display: block;
+    margin-right: auto;
+    max-width: 100%;
+}
+.af-floatleft{ float: left; }
+.af-floatright{ float: right; }
+.floatcenter{ margin: 0 auto; }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.af-container{
+    width: 1140px;
+    margin: 0 auto;
+   }
+
+/* Header:Transparent - styles */
+
+.af-header-transparent-section{
+    padding: 25px 0px;
+    height: 100px;
+    z-index: 10;
+}
+.af-logo{
+    width: 210px;
+}
+.af-logo img{
+    width: 100%;
+}
+.af-navigation{
+    width: 780px;
+}
+.af-navigation ul{
+    width: 100%;
+    text-align: center;
+}
+.af-navigation li{
+    display: inline-block;
+}
+.af-navigation li a {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 18.77px;
+}
+
+.af-header-button{
+    max-width: 150px;
+}
+.af-header-button a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 18.77px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 9px 30px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    display: block;
+    border-radius: 3px;
+}
+
+/* Home hero */
+.af-home-hero-section{
+    background: linear-gradient(195.68deg, #5F20E0 1.4%, #244ADC 110.34%);
+    margin-top: -175px;
+    padding: 130px 0px 150px;
+}
+.af-home-hero-bg-layer{
+    background-image: url(assets/img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+}
+.af-hero-empty-space{
+    height: 630px;
+}
+.af-hero-content{
+    width: 50%;
+}
+.af-hero-content h1{
+    color: #ffffff;
+    font-family: 'Work Sans';
+    font-size: 64px;
+    line-height: 88px;
+}
+.af-hero-content p{}
+.af-hero-content a{}
+.af-hero-content a.af-video-icon{}
+.af-hero-content a.af-video-icon img{}
+.af-hero-img{
+    width: 50%;
+}
+.af-hero-img img{}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
