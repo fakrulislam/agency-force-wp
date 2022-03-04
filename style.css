@@ -340,23 +340,107 @@ iframe{
  */
 .af-logo-showcase-section {
      margin-top: -72px;
-     margin-bottom: 100px;
+     z-index: 10;
+     position: relative;
 }
 .af-logo-showcase {
     background: #fff;
     padding: 50px 80px;
     text-align: center;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 10px 16px -1px rgba(230,230,230,0.49);
-    -moz-box-shadow: 0px 10px 16px -1px rgba(230,230,230,0.49);
-    box-shadow: 0px 10px 16px -1px rgba(230,230,230,0.49);
+    -webkit-box-shadow: 0px 15px 30px -5px rgba(227,227,227,1);
+    -moz-box-shadow: 0px 15px 30px -5px rgba(227,227,227,1);
+    box-shadow: 0px 15px 30px -5px rgba(227,227,227,1);
 }
 .af-logo-showcase img {
     width: 100px;
     height: auto;
     margin: 0px 45px;
 }
-
+/*
+ * Home service section styles
+ */
+.af-service-box-section {
+     background: #F5F6F8;
+     margin-top: -62px;
+     padding: 187px 0px 80px;
+ }
+.af-service-boxes-container{}
+.af-service-boxes-container > h2 {
+    font-size: 64px;
+    color: #333333;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    line-height: 88px;
+}
+.af-service-boxes-container > p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0% 27%;
+}
+.af-service-boxes {
+    margin-top: 70px;
+}
+.af-service-box-item:first-child {
+    margin-left: 0px
+}
+.af-service-box-item {
+    width: 26%;
+    float: left;
+    margin-left: 20px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+}
+.af-service-box-item > img {
+    width: 30%;
+}
+.af-service-box-item > h3 {
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #333333;
+}
+.af-service-box-item p {
+    font-size: 11px;
+    line-height: 25px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+.af-service-box-item ul{}
+.af-service-box-item li {
+    margin: 10px 0px;
+}
+.af-service-box-item li img {
+    width: 6%;
+    float: left;
+    margin-right: 10px;
+}
+.af-service-box-item li p {
+    margin: 0;
+}
+.service-box-item-bg1 {
+    background-image: url(assets/img/service-box-1-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 80px 80px;
+}
+.service-box-item-bg2 {
+    background-image: url(assets/img/service-box-2-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 80px 52px;
+}
+.service-box-item-bg3 {
+    background-image: url(assets/img/service-box-3-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 80px 65px;
+}
 
 /* ==========================================================================
    Helper classes
