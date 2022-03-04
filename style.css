@@ -162,7 +162,9 @@ iframe{
     margin: 0 auto;
    }
 
-/* Header:Transparent - styles */
+/*
+ * Header:Transparent - styles
+ */
 
 .af-header-transparent-section{
     padding: 25px 0px;
@@ -210,11 +212,13 @@ iframe{
     border-radius: 3px;
 }
 
-/* Home hero */
+/*
+ * Home hero styles
+ */
 .af-home-hero-section{
     background: linear-gradient(195.68deg, #5F20E0 1.4%, #244ADC 110.34%);
     margin-top: -175px;
-    padding: 110px 0px 150px;
+    padding: 110px 0px 75px;
 }
 .af-home-hero-bg-layer{
     background-image: url(assets/img/hero-bg.svg);
@@ -265,7 +269,9 @@ iframe{
     margin-left: -76px;
 }
 
-/* footer section styles */
+/*
+ * footer section styles
+ */
 .af-footer-top-border{
     background-image: url(assets/img/footer-top-border.svg);
     background-repeat: no-repeat;
@@ -329,6 +335,28 @@ iframe{
     font-weight: 400;
     color: #ffffff;
 }
+/*
+ * Logo showcase
+ */
+.af-logo-showcase-section {
+     margin-top: -72px;
+     margin-bottom: 100px;
+}
+.af-logo-showcase {
+    background: #fff;
+    padding: 50px 80px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 16px -1px rgba(230,230,230,0.49);
+    -moz-box-shadow: 0px 10px 16px -1px rgba(230,230,230,0.49);
+    box-shadow: 0px 10px 16px -1px rgba(230,230,230,0.49);
+}
+.af-logo-showcase img {
+    width: 100px;
+    height: auto;
+    margin: 0px 45px;
+}
+
 
 /* ==========================================================================
    Helper classes
