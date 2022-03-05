@@ -548,7 +548,119 @@ iframe{
     margin-top: 25px;
 }
 
-
+/*
+ * Testimonial section styles
+ */
+.af-testimonial-section {
+    background: linear-gradient(270deg, #6236FF 0%, #244ADC 100%);
+    border-radius: 0px 100px 0px 0px;
+    width: 80%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 100px;
+    margin-bottom: 150px;
+}
+.af-testimonial-wrapper {
+    position: relative;
+}
+.af-testimonial-wrapper > img.af-top-right {
+    float: right;
+}
+.af-testimonial-wrapper > img.af-bottom-left {
+    bottom: 12%;
+    position: absolute;
+    left: -6%;
+}
+.af-testimonial-content-wrapper {
+    position: relative;
+}
+.af-testimonial-content-wrapper > img {
+    width: 90px;
+    position: absolute;
+    left: 57%;
+    top: 10%;
+}
+.af-carousel-item{}
+.af-testimonial-img-wrapper {
+    width: 40%;
+    float: left;
+}
+.af-testimonial-img-wrapper{}
+.af-testimonial-img {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 412px;
+    height: 412px;
+}
+.af-testimonial-img img {
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 412px;
+    height: 412px;
+}
+.af-testimonial-thumb-wrapper {
+    background: #ffffff;
+    padding: 20px 20px 24px;
+    border-radius: 5px;
+    position: relative;
+    width: 60%;
+    margin-left: 242px;
+    margin-top: -105px;
+}
+.af-testimonial-thumb-wrapper img {
+    width: 30% !important;
+    float: left;
+    margin-right: 25px;
+}
+.af-testimoial-thumb-content {
+    margin-left: 90px;
+}
+.af-testimoial-thumb-content h4 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #333333;
+}
+.af-testimoial-thumb-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: 400;
+}
+.af-testimonial-item-content {
+    width: 43%;
+    float: right;
+}
+.af-testimonial-item-content p {
+    font-family: Georgia, sans-serif;
+    font-size: 30px;
+    line-height: 55px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 60px 0px 0px;
+}
+/* owl carousel styles */
+.owl-nav{
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 80px;
+}
+.owl-nav button{
+    margin: 15px;
+    background: #0091FF !important;
+    color: #ffffff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.owl-nav .disabled{
+    background: #3A4FF4 !important;
+}
+.owl-carousel .owl-stage-outer{
+    overflow: inherit !important;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
