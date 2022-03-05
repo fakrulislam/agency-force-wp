@@ -335,6 +335,7 @@ iframe{
     font-weight: 400;
     color: #ffffff;
 }
+
 /*
  * Logo showcase
  */
@@ -441,6 +442,112 @@ iframe{
     background-position: top right;
     background-size: 80px 65px;
 }
+
+/*
+ * Home features: top
+ */
+ .af-feature-section-top {
+     margin: 100px 0px 150px;
+ }
+.af-feature-top-wrapper{}
+.af-feature-top-img {
+    width: 50%;
+}
+.af-feature-top-img img {
+    width: 90%;
+}
+.af-feature-top-content{
+    width: 50%;
+}
+.af-feature-top-content h2 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #333333;
+}
+.af-feature-top-content h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333333;
+    margin: 30px 0px;
+}
+.af-feature-top-content p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #666666;
+}
+.af-feature-top-content a {
+    display: inline-block;
+    background: #E4F2FE;
+    padding: 16px 41px;
+    border-radius: 5px;
+    color: #0091FF;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+/*
+ * Home features: bottom
+ */
+ .af-feature-section-bottom {
+     margin: 0px 0px 150px;
+ }
+.af-feature-bottom-wrapper{}
+.af-feature-bottom-content {
+    width: 45%;
+}
+.af-feature-bottom-content h2 {
+    font-size: 35px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 0;
+}
+.af-feature-bottom-content p {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 50px;
+}
+.af-icon-box-wrapper {
+    margin-bottom: 50px;
+}
+.af-icon-box-wrapper:last-child{
+    margin-bottom: 0px;
+}
+.af-icon-box-img {
+    width: 8%;
+    margin-right: 30px;
+}
+.af-icon-box-img img{}
+.af-icon-box-content{}
+.af-icon-box-content h4 {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0px 0px;
+}
+.af-icon-box-content p {
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #666666;
+    margin: 20px 0px 0px 78px;
+}
+.af-feature-bottom-img{
+    width: 55%;
+}
+.af-feature-bottom-img img {
+    width: 90%;
+    float: right;
+    margin-top: 25px;
+}
+
 
 /* ==========================================================================
    Helper classes
