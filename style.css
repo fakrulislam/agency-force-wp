@@ -478,7 +478,8 @@ iframe{
     font-weight: 400;
     color: #666666;
 }
-.af-feature-top-content a {
+.af-feature-top-content a,
+.af-latest-posts-callout a {
     display: inline-block;
     background: #E4F2FE;
     padding: 16px 41px;
@@ -557,7 +558,7 @@ iframe{
     width: 80%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 235px;
 }
 .af-testimonial-wrapper {
     position: relative;
@@ -660,6 +661,64 @@ iframe{
 }
 .owl-carousel .owl-stage-outer{
     overflow: inherit !important;
+}
+
+/* home latest post section */
+.af-latest-posts-section {
+    margin-bottom: 100px;
+}
+.af-latest-posts-wrapper{}
+.af-latest-posts-callout {
+    width: 40%;
+    float: left;
+    margin-right: 100px;
+}
+.af-latest-posts-callout h2 {
+    font-size: 50px;
+    line-height: 65px;
+    color: #333333;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.af-latest-posts-callout p {
+    color: #666666;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+}
+.af-latest-posts-callout a{}
+.af-latest-posts-content-wrapper {
+    float: right;
+    width: 50%;
+}
+.af-latest-post-item {
+    width: 40%;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+}
+.af-latest-post-item img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.af-latest-post-item h3 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #333333;
+    font-family: Georgia, sans-serif;
+}
+.af-latest-posts-title-border {
+    border: 1px solid #FF83B2;
+    display: inline-block;
+    width: 26%;
+}
+.af-latest-posts-content-wrapper > div:first-child,
+.af-latest-posts-content-wrapper > div:nth-of-type(3){
+    margin-top: -67px;
 }
 /* ==========================================================================
    Helper classes
