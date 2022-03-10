@@ -730,7 +730,7 @@ iframe{
  * About page styles
  */
 
- .af-about-hero-section {
+ .af-primary-hero-section {
      background: url(assets/img/about/about-hero-bg.svg);
      background-repeat: no-repeat;
      background-position: center center;
@@ -738,7 +738,7 @@ iframe{
      padding: 290px 0px 411px;
      margin-top: -218px;
  }
- .af-about-hero-section h1 {
+ .af-primary-hero-section h1 {
      text-align: center;
      color: #ffffff;
      font-family: 'Work Sans', sans-serif;
