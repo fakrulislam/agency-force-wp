@@ -38,15 +38,36 @@
       /*
        * Testimonial carousel
        */
-      $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-           items : 1,
-           // loop  : true,
-           margin: 250,
-           nav    : true,
-           dots   : false,
-           navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
-        });
+      // $(document).ready(function(){
+      //   $('.owl-carousel').owlCarousel({
+      //      items : 1,
+      //      // loop  : true,
+      //      margin: 250,
+      //      nav    : true,
+      //      dots   : false,
+      //      navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+      //   });
+      // });
+
+      $('.owl-carousel').owlCarousel({
+         items : 1,
+         // loop  : true,
+         margin: 250,
+         nav    : true,
+         dots   : false,
+         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+      });
+
+      // /*
+      //  * Project carousel
+      //  */
+      $('.owl-project').owlCarousel({
+         items : 1,
+         // loop  : true,
+         margin: 250,
+         nav    : true,
+         dots   : true,
+         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
       });
 
 })( jQuery );

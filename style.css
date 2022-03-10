@@ -825,6 +825,22 @@ iframe{
     background-repeat: no-repeat;
     background-position: top right;
 }
+.af-project-slider-content-wrapper {}
+.af-project-slider-content-wrapper .owl-nav {
+    margin-left: inherit;
+    margin-top: 50px;
+}
+.af-project-slider-content-wrapper .owl-nav button {
+    background: #ffffff !important;
+    color: #0091FF !important;
+    border: 1px solid #0091FF !important;
+    border-radius: 3px !important;
+}
+.af-project-slider-content-wrapper .owl-nav button.disabled{
+    background: #0091FF !important;
+    color: #ffffff !important;
+    border: none !important;
+}
 .af-project-slide-item{}
 .af-project-slide-content {
     width: 45%;
@@ -1047,6 +1063,19 @@ iframe{
 .af-about-logo-wrapper img {
     margin: 20px;
     width: 130px;
+}
+
+/*
+ * Server page styles
+ */
+.af-service-box-section-bg {
+    background: #ffffff;
+    padding-top: 100px;
+}
+.af-service-box-servicepage{}
+.af-service-box-servicepage .service-box-item-bg1,
+.af-service-box-servicepage .service-box-item-bg3 {
+    border: 1px solid #dddddd;
 }
 /* ==========================================================================
    Helper classes
