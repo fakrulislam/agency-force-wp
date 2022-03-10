@@ -123,6 +123,7 @@ h6{
 
 img{
     border:none;
+    max-width: 100%;
 }
 
 iframe{
@@ -156,6 +157,10 @@ iframe{
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*
+ * Home page styles
+ */
 
 .af-container{
     width: 1140px;
@@ -719,6 +724,329 @@ iframe{
 .af-latest-posts-content-wrapper > div:first-child,
 .af-latest-posts-content-wrapper > div:nth-of-type(3){
     margin-top: -67px;
+}
+
+/*
+ * About page styles
+ */
+
+ .af-about-hero-section {
+     background: url(assets/img/about/about-hero-bg.svg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: contain;
+     padding: 290px 0px 411px;
+     margin-top: -218px;
+ }
+ .af-about-hero-section h1 {
+     text-align: center;
+     color: #ffffff;
+     font-family: 'Work Sans', sans-serif;
+     font-size: 64px;
+     line-height: 88px;
+     font-weight: 600;
+     margin: 0% 17%;
+ }
+.af-about-video-section{}
+.af-video-content-wrapper{}
+.af-about-video-content {
+    width: 53%;
+    padding-right: 45px;
+}
+.af-about-video-content h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 53px;
+    line-height: 74px;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+}
+.af-about-video-content p.af-video-subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333333;
+}
+.af-about-video-content p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #666666;
+    font-weight: 400;
+    margin-right: 40px;
+}
+.af-about-video {
+    width: 43%;
+    margin-top: 110px;
+}
+.af-about-video a.video-thumb{}
+.af-about-video a.video-thumb img{}
+.af-icon-box-section{}
+.af-icon-box-content-wrapper {
+    background: #F5F6F8;
+    padding: 50px;
+    margin: 100px 0px;
+    border-radius: 5px;
+}
+.af-icon-box-content-wrapper .af-icon-box:first-child {
+    padding-right: 35px;
+}
+.af-icon-box-content-wrapper .af-icon-box:last-child {
+    padding-left: 35px;
+}
+.af-icon-box {
+    width: 46%;
+}
+.af-iconbox-img {
+    float: left;
+    margin-right: 30px;
+    width: 8%;
+}
+.af-iconbox-img img{}
+.af-iconbox-content {
+    float: right;
+    width: 85%;
+}
+.af-iconbox-content h3 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0;
+}
+.af-iconbox-content p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #666666;
+}
+.af-project-slider-section{}
+.af-project-slider-content-wrapper {
+    background-image: url(assets/img/about/dot-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.af-project-slide-item{}
+.af-project-slide-content {
+    width: 45%;
+    float: left;
+    padding-top: 20px;
+}
+.af-project-slide-content h2 {
+    font-size: 57px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #333333;
+    font-family: 'Work Sans';
+}
+.af-project-slide-content p{}
+.af-project-slide-content a{}
+.af-project-slide-img {
+    width: 40%;
+    float: right;
+    height: 328px;
+    background-image: url(assets/img/about/slide-thumb-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 73px;
+    margin-right: 50px;
+}
+.af-project-slide-img a{}
+.af-project-slide-img a img {
+    margin-top: -18px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 13px 4px #dbdbdb;
+    -webkit-box-shadow: 5px 5px 13px 4px #dbdbdb;
+}
+.af-about-calltoaction-section {
+    background-image: url(assets/img/about/call-to-action-top-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    padding: 197px 0px 0px;
+}
+.af-about-calltoaction-bglayer {
+    background-image: url(assets/img/about/call-to-action-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 45px 0px;
+    margin-bottom: -18px;
+}
+.af-calltoaction-wrapper{}
+.af-calltoaction-title {
+    width: 62%;
+    float: left;
+}
+.af-calltoaction-title h2 {
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'Work Sans';
+}
+.af-calltoaction-button {
+    float: right;
+}
+.af-calltoaction-button a {
+    color: #244ADC;
+    padding: 15px 55px;
+    background: #ffffff;
+    border-radius: 3px;
+    margin-top: 91px;
+    display: block;
+    box-shadow: 0px 6px 15px 0px #244adca1;
+    -webkit-box-shadow: 0px 6px 15px 0px #244adca1;
+    -moz-box-shadow: 0px 6px 15px 0px #244adca1;
+}
+.af-calltoaction-button a i {
+    margin-left: 20px;
+}
+.af-team-section {
+    background: #F5F5F5;
+    padding: 100px 0px;
+}
+.af-team-content-wrapper{}
+.af-team-title{}
+.af-team-title h2 {
+    font-family: 'Work Sans';
+    font-size: 64px;
+    line-height: 88px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.af-team-title p {
+    text-align: center;
+    color: #666666;
+    margin: 0% 27% 5%;
+}
+.af-team-member-wrapper{}
+.af-single-team-card {
+    width: 26%;
+    padding: 50px 30px 35px;
+    background: #ffffff;
+    margin: 10px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    text-align: center;
+}
+.af-single-team-card img {
+    border-radius: 300px;
+    width: 40%;
+}
+.af-single-team-card h4 {
+    color: #666666;
+    text-transform: uppercase;
+}
+.af-single-team-card h3 {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #333333;
+}
+.af-single-team-card p {
+    color: #666666;
+}
+.af-team-social-icon-wrapper{}
+.af-team-social-icon-wrapper i {
+    color: #9B9B9C;
+    margin: 10px;
+}
+.af-about-testimonial-section {
+    padding: 100px 0px;
+}
+.af-about-testimonial-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.af-about-testimonial-title h2 {
+    font-family: 'Work Sans';
+    font-size: 64px;
+    line-height: 88px;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.af-about-testimonial-title p {
+    color: #666666;
+}
+.af-about-testimonial-content-wrapper{}
+.af-about-testimonial-thumb {
+    width: 50%;
+}
+.af-about-testimonial-client-img{}
+.af-about-testimonial-client-img img {
+    border-radius: 5px;
+    width: 70%;
+}
+.af-about-testimonial-brand-logo-wrapper {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 25px;
+    width: 40%;
+    box-shadow: 1px 8px 10px 0px #c5c5c5;
+    -webkit-box-shadow: 1px 8px 10px 0px #c5c5c5;
+    -moz-box-shadow: 1px 8px 10px 0px #c5c5c5;
+    margin-top: -136px;
+    position: relative;
+    margin-left: 256px;
+}
+.af-about-testimonial-brand-logo {
+    width: 35%;
+    float: left;
+    margin-right: 20px;
+}
+.af-about-testimonial-brand-logo img{}
+.af-about-testimonial-brand-logo-content {
+    width: 56%;
+    float: right;
+}
+.af-about-testimonial-brand-logo-content h4 {
+    font-family: 'Work Sans';
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    color: #333333;
+}
+.af-about-testimonial-brand-logo-content p {
+    color: #999999;
+    margin: 0;
+}
+.af-about-testimonial-content {
+    width: 45%;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 54px;
+}
+.af-about-testimonial-content p {
+    font-size: 32px;
+    line-height: 53px;
+    font-family: Georgia;
+    margin-top: 0px;
+}
+.af-about-testimonial-rating-wrapper{}
+.af-about-testimonial-rating-wrapper img {
+    width: 23px;
+}
+.af-about-logo-section {
+    margin-bottom: 100px;
+}
+.af-about-logo-wrapper {
+    background: #ffffff;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0px 25px 10px -10px #d9d9d963;
+    -webkit-box-shadow: 0px 25px 10px -10px #d9d9d963;
+    -moz-box-shadow: 0px 25px 10px -10px #d9d9d963;
+}
+.af-about-logo-wrapper img {
+    margin: 20px;
+    width: 130px;
 }
 /* ==========================================================================
    Helper classes
