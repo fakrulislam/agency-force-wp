@@ -1066,7 +1066,7 @@ iframe{
 }
 
 /*
- * Server page styles
+ * Service page styles
  */
 .af-service-box-section-bg {
     background: #ffffff;
@@ -1076,6 +1076,50 @@ iframe{
 .af-service-box-servicepage .service-box-item-bg1,
 .af-service-box-servicepage .service-box-item-bg3 {
     border: 1px solid #dddddd;
+}
+.af-service-icon-box-section {
+    margin-top: 100px;
+}
+.af-service-icon-box-wrapper {
+    background: #244ADC;
+    border-radius: 15px;
+    padding: 50px;
+    color: #fff;
+    position: relative;
+}
+.af-service-icon-box-item {
+    float: left;
+    width: 29.4%;
+    padding: 20px;
+}
+.af-service-icon-box-item img {
+    width: 20%;
+}
+.af-service-icon-box-item h3 {
+    font-family: 'Work Sans';
+    font-size: 28px;
+    line-height: 45px;
+    margin: 15px 0px;
+}
+.af-service-icon-box-item p{}
+.af-service-page-feature-section-top {
+    background: #f7f8f9;
+    margin: -212px 0px 0px;
+    padding-top: 336px;
+}
+.af-service-page-feature-section-bottom {
+    background: #f7f8f9;
+    margin: 0px;
+    padding: 136px 0px;
+}
+.af-service-page-calltoaciton-section {
+    padding: 0px 0px 217px;
+    background: #f7f8f9;
+    margin-bottom: -386px;
+}
+.af-service-page-calltoaciton-section .af-about-calltoaction-bglayer {
+    padding: 40px;
+    position: relative;
 }
 /* ==========================================================================
    Helper classes
