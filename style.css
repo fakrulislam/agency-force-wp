@@ -1221,6 +1221,117 @@ iframe{
 }
 .af-right-column .af-blog-post-item{}
 
+/*
+ * Blog single page style
+ */
+ .af-blog-single-hero-section {
+     padding: 380px 0px 280px;
+ }
+ .af-blog-single-content-section {
+    margin-top: -459px;
+    margin-bottom: 100px;
+}
+ .af-post-featured-thumb {
+     text-align: center;
+     height: 520px;
+ }
+ .af-post-featured-thumb img {
+     border-radius: 5px;
+     width: 100%;
+ }
+.af-post-meta-wrapper{}
+.af-post-meta-wrapper h1 {
+    margin: 50px 0px 30px;
+    font-family: 'Work Sans';
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #333333;
+}
+.af-post-meta{}
+.af-post-author {
+    width: 22%;
+    float: left;
+    margin-right: 50px;
+}
+.af-post-author img {
+    width: 64px;
+    border-radius: 10px;
+    float: left;
+}
+.af-author-name {
+    float: right;
+}
+.af-author-name h4 {
+    margin: 0px;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #333333;
+}
+.af-author-name a {
+    color: #999999;
+}
+.af-post-date {
+    width: 22%;
+    float: left;
+    margin-right: 50px;
+    margin-top: 14px;
+}
+.af-post-date img {
+    width: 28px;
+    float: left;
+    margin-right: 20px;
+}
+.af-post-date p {
+    margin: 3px 0px 0px;
+    color: #666666;
+}
+.af-post-comment {
+    width: 22%;
+    float: left;
+    margin-top: 14px;
+}
+.af-post-comment img {
+    width: 28px;
+    float: left;
+    margin-right: 20px;
+}
+.af-post-comment p {
+    margin: 0;
+}
+.af-post-comment p a {
+    color: #666666;
+}
+.af-post-meta-wrapper {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 50px;
+}
+.af-post-content {
+    width: 65%;
+    float: left;
+}
+.af-post-sidebar {
+    width: 25%;
+    float: right;
+}
+.af-post-sidebar h2 {
+    margin: 0px 0px 30px;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 600;
+}
+.af-post-sidebar img{}
+.af-post-sidebar-item {
+    margin-bottom: 50px;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
