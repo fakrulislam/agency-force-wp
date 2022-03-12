@@ -1121,6 +1121,106 @@ iframe{
     padding: 40px;
     position: relative;
 }
+
+/*
+ * Blog page styles
+ */
+ .af-blogpage-hero-section {
+     background-image: linear-gradient(195.68deg, #5F20E0 1.4%, #244ADC 110.34%);
+     background-color: #244adc;
+     margin-top: -183px;
+ }
+ .af-blogpage-bg-layer {
+    padding: 145px 0px 280px;
+    background-image: url(assets/img/blog-bg-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+ .af-blogpage-bg-layer h1 {
+     text-align: center;
+     color: #ffffff;
+     font-size: 64px;
+     line-height: 88px;
+     padding: 0px 22%;
+ }
+.af-blog-post-section{}
+.af-blog-post-wrapper {
+    background: #ffffff;
+    padding: 50px;
+    margin-top: -219px;
+    border-radius: 10px 10px 0px 0px;
+}
+.af-left-column {
+    width: 68%;
+    margin-right: 20px;
+}
+.af-right-column {
+    width: 30%;
+}
+.af-blog-featured-content{}
+.af-blog-post-item {
+    margin-bottom: 25px;
+}
+.af-blog-post-item img {
+    border-radius: 5px 5px 0px 0px;
+}
+.af-post-item-content {
+    padding: 30px;
+    border: 1px solid #AAAAAA;
+    border-top: none;
+}
+.af-blog-featured-content .af-post-item-content{
+    border-radius: 0px 0px 5px 5px;
+}
+.af-blog-featured-content .af-post-item-content h1 a {
+    font-family: 'Work Sans';
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #333333;
+}
+.af-blog-post-item h1{
+    margin: 0px 0px 20px;
+}
+.af-blog-post-item h1 a {
+    font-family: 'Work Sans';
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: bold;
+}
+.af-blog-post-item p {
+    color: #666666;
+}
+.af-blog-post-item a.af-post-readmore {
+    font-family: 'Work Sans';
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #244ADC;
+    padding: 15px 20px;
+    border-radius: 3px;
+    display: inline-block;
+    font-style: normal;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.af-blogpage-footer-callout{
+    background: none;
+}
+.af-blog-posts{}
+.af-blog-posts .af-blog-post-item {
+    width: 48.5%;
+    float: left;
+    margin-right: 20px;
+}
+.af-blog-posts .af-blog-post-item:last-child{
+    margin-right: 0px;
+}
+.af-right-column .af-blog-post-item{}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
