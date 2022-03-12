@@ -216,6 +216,13 @@ iframe{
     display: block;
     border-radius: 3px;
 }
+.af-header-primary-section {
+    background: linear-gradient(195.68deg, #5F20E0 1.4%, #244ADC 110.34%);
+    background-color: #3C42E9;
+}
+.af-header-primary-section .af-header-trnsparent {
+    padding: 25px 0px 64px;
+}
 
 /*
  * Home hero styles
@@ -1329,7 +1336,97 @@ iframe{
 .af-post-sidebar-item {
     margin-bottom: 50px;
 }
-
+.af-contact-content-section {
+    margin: 100px 0px 165px;
+    margin-bottom: -83px;
+}
+.af-contact-map{}
+.af-contact-map img{}
+.af-contact-info-wrapper {}
+.af-contact-info {
+    float: right;
+    width: 26%;
+    padding: 40px;
+}
+.af-contact-info ul{}
+.af-contact-info ul li{}
+.af-contact-info ul li i {
+    color: #959AA3;
+    margin-right: 15px;
+}
+.af-contact-info ul li p {
+    display: inline-block;
+    color: #333333;
+    margin: 10px 0px;
+}
+.af-contact-form-wrapper {
+    width: 46%;
+    background-color: #ffffff;
+    padding: 50px;
+    margin-top: -30%;
+    z-index: 10;
+    position: relative;
+    margin-left: 10%;
+    float: left;
+    padding-right: 65px;
+    box-shadow: 0px 20px 5px -2px #afafaf59;
+    -webkit-box-shadow: 0px 20px 5px -2px #afafaf59;
+    -moz-box-shadow: 0px 20px 5px -2px #afafaf59;
+    background-image: url(assets/img/service-box-2-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.af-contact-form-wrapper h1 {
+    font-family: 'Work Sans';
+    font-size: 64px;
+    line-height: 88px;
+    margin: 0;
+    color: #333333;
+    font-weight: 600;
+}
+.af-contact-form-wrapper > p {
+    color: #666666;
+}
+.af-contact-form-wrapper form{}
+.af-contact-form-wrapper form p {
+    margin: 20px 0px;
+}
+.af-contact-form-wrapper form input,
+.af-contact-form-wrapper form .af-message-field textarea {
+    padding: 15px;
+    background: #F5F6F8;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    display: block;
+    width: 93%;
+}
+.af-contact-form-wrapper form input:focus,
+.af-contact-form-wrapper form .af-message-field textarea:focus{
+     outline: none;
+}
+.af-contact-form-wrapper form input::placeholder{
+    color: #999999;
+}
+.af-contact-form-wrapper form .af-fname-field {
+    width: 45%;
+    float: left;
+    margin-right: 30px;
+}
+.af-contact-form-wrapper form .af-lname-field {
+    width: 46%;
+    float: left;
+}
+.af-contact-form-wrapper form .af-email-field{}
+.af-contact-form-wrapper form .af-phone-field{}
+.af-contact-form-wrapper form .af-message-field textarea{}
+.af-contact-form-wrapper form .af-submit-button input {
+    background: #0091FF;
+    width: 40%;
+    color: #ffffff;
+    border: none;
+    margin-top: 43px;
+    padding: 20px 0px;
+}
 
 
 /* ==========================================================================
