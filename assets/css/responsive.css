@@ -19,6 +19,7 @@
     .af-container{
         width: 85%;
     }
+    /* header styles */
     .af-logo {
         width: 40%;
     }
@@ -42,14 +43,18 @@
         display: block;
         padding: 5px 0px;
     }
+    .af-navigation a.af-mobile-toggle-icon:hover{
+        background: none;
+    }
     .af-navigation .af-nav{}
     .af-responsive {
         position: absolute;
         right: 0;
         top: 48px;
-        background: #dddddd33;
+        background: #00000057;
         border-radius: 3px;
         padding: 15px 0px;
+        overflow: hidden;
     }
     .af-navigation .af-responsive a {
         display: block;
@@ -59,7 +64,302 @@
     .af-navigation .af-responsive a:hover{
         background: #dddddd33;
     }
-
+    .af-hero-content h1 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .af-hero-content p {
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .af-hero-img img {
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+    .af-hero-content a.af-hero-button {
+        padding: 15px 20px;
+    }
+    .af-home-hero-section {
+        margin-top: -175px;
+        padding: 110px 0px 0px;
+        position: relative;
+    }
+    .af-hero-empty-space {
+        height: 470px;
+    }
+    .af-logo-showcase {
+        padding: 20px;
+    }
+    .af-logo-showcase img {
+        width: 42px;
+        margin: 0px 15px;
+    }
+    .af-logo-showcase-section {
+        margin-top: -32px;
+    }
+    .af-header-transparent-section{
+        position: relative;
+    }
+    .af-service-box-section {
+        margin-top: -62px;
+        padding: 148px 0px 80px;
+    }
+    .af-service-boxes-container > h2 {
+        font-size: 40px;
+    }
+    .af-service-boxes-container > p {
+        padding: 0% 10%;
+    }
+    .af-service-box-item {
+        width: 80%;
+        float: inherit;
+        margin-left: 0px;
+        padding: 10%;
+        margin-bottom: 50px;
+    }
+    .af-feature-top-img {
+        width: 100%;
+        float: none;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .af-feature-top-img img {
+        width: 70%;
+    }
+    .af-feature-top-content {
+        width: 100%;
+    }
+    .af-feature-section-top {
+        margin: 100px 0px 100px;
+    }
+    .af-feature-bottom-content {
+        width: 100%;
+        margin-top: 80%;
+    }
+    .af-feature-bottom-img {
+        width: 80%;
+        position: absolute;
+        text-align: center;
+        float: none;
+    }
+    .af-feature-bottom-img img {
+        width: 70%;
+        float: none;
+        margin-top: 0px;
+    }
+    .af-icon-box-content p {
+        font-size: 16px;
+        margin: 20px 0px 0px 66px;
+    }
+    .af-testimonial-section {
+        width: 70%;
+        padding: 10%;
+        margin-bottom: 144px;
+    }
+    .af-testimonial-img-wrapper {
+        width: 100%;
+        float: none;
+    }
+    .af-testimonial-img {
+        width: 360px;
+        height: 360px;
+    }
+    .af-testimonial-img img {
+        width: 360px;
+        height: 360px;
+    }
+    .af-testimonial-item-content {
+        width: 100%;
+        float: none;
+        margin-top: 90px;
+    }
+    .af-testimonial-thumb-wrapper {
+        width: 70%;
+        margin: -20px auto 0;
+        padding: 20px;
+    }
+    .af-testimonial-content-wrapper > img {
+        width: 30px;
+        left: 0%;
+        bottom: 42%;
+        top: inherit;
+    }
+    .af-testimonial-wrapper > img.af-bottom-left {
+        bottom: 57%;
+        left: -12%;
+        width: 20%;
+    }
+    .owl-nav {
+        text-align: center;
+        margin: 50px auto 30px;
+    }
+    .af-testimonial-wrapper > img.af-top-right {
+        width: 20%;
+        margin-bottom: -20px;
+    }
+    .af-testimonial-thumb-wrapper img {
+        width: 70px;
+        height: auto;
+    }
+    .af-latest-posts-callout {
+        width: 100%;
+        float: none;
+        margin-bottom: 145px;
+    }
+    .af-latest-posts-content-wrapper {
+        float: none;
+        width: 100%;
+    }
+    .af-latest-post-item {
+        width: 90%;
+        float: none;
+        margin: 20px 0px;
+        padding: 5%;
+    }
+    .af-footer-section{
+        background-size: cover;
+    }
+    .af-footer-top-border{
+        background-size: auto;
+    }
+    .af-footer-top {
+        padding: 80% 10% 5%;
+    }
+    .af-footer-column {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .af-footer-column h4 {
+        border-bottom: 1px solid #dddddd78;
+        padding-bottom: 20px;
+    }
+    .af-footer-top-border {
+        height: 153px;
+    }
+    .af-primary-hero-section {
+        padding: 353px 0px 411px;
+        margin-top: -395px;
+    }
+    .af-primary-hero-section {
+        padding: 200px 0px;
+        margin-top: -162px;
+        background-size: cover;
+    }
+    .af-primary-hero-section h1 {
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .af-about-video-section {
+        margin-top: 50px;
+    }
+    .af-about-video-content {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 25px;
+        float: none;
+    }
+    .af-about-video {
+        width: 100%;
+        margin-top: 50px;
+        float: none;
+    }
+    .af-about-video a.video-thumb {
+        display: block;
+        text-align: center;
+    }
+    .af-icon-box {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .af-iconbox-content {
+        float: right;
+        width: 82%;
+    }
+    .af-icon-box-content-wrapper .af-icon-box:last-child {
+        margin-bottom: 0px;
+    }
+    .af-project-slide-content {
+        width: 100%;
+        float: none;
+    }
+    .af-project-slide-content h2 {
+        font-size: 37px;
+        line-height: 46px;
+    }
+    .af-project-slide-img {
+        width: 73%;
+        float: none;
+        height: auto;
+        margin: 50px auto 0px;
+    }
+    .af-project-slider-content-wrapper {
+        background-position: 107% -11%;
+    }
+    .af-about-calltoaction-section {
+        padding: 90px 0px 0px;
+        position: relative;
+        background-size: cover;
+    }
+    .af-about-calltoaction-bglayer {
+        padding: 0px;
+        background-size: cover;
+    }
+    .af-calltoaction-title {
+        width: 100%;
+        float: none;
+    }
+    .af-calltoaction-title h2 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .af-calltoaction-button {
+        float: none;
+        text-align: center;
+    }
+    .af-calltoaction-button a {
+        padding: 5px 15px;
+        margin-top: 8px;
+        display: inline-block;
+        font-size: 13px;
+    }
+    .af-calltoaction-wrapper {
+        padding: 4%;
+    }
+    .af-team-section {
+        margin-top: -28px;
+    }
+    .af-team-title p {
+        margin: 0% 10% 5%;
+    }
+    .af-single-team-card {
+        width: 70%;
+        padding: 50px 10% 35px;
+        margin: 5%;
+    }
+    .af-team-title h2,
+    .af-about-testimonial-title h2 {
+        font-size: 44px;
+    }
+    .af-about-testimonial-thumb {
+        width: 100%;
+        float: none;
+    }
+    .af-about-testimonial-content {
+        width: 100%;
+        float: none;
+        margin-top: 100px;
+    }
+    .af-about-testimonial-brand-logo-wrapper {
+        width: 60%;
+        margin-top: -60px;
+        margin-left: 116px;
+    }
 }
 
 /*
@@ -72,6 +372,151 @@
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .af-container{
         width: 85%;
+    }
+    .af-logo {
+        width: 20%;
+    }
+    .af-navigation {
+        width: 62%;
+    }
+    .af-header-button {
+        width: 18%;
+    }
+    .af-navigation a{
+        padding: 10px;
+    }
+    .af-hero-content h1 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .af-hero-content p {
+        font-size: 18px;
+        line-height: 38px;
+    }
+    .af-hero-img img {
+        margin-left: 0px;
+    }
+    .af-home-hero-section {
+        padding: 132px 0px 16px;
+    }
+    .af-logo-showcase {
+        padding: 50px;
+    }
+    .af-logo-showcase img {
+        width: 70px;
+        margin: 0px 39px;
+    }
+    .af-service-boxes-container > p {
+        padding: 0% 20%;
+    }
+    .af-service-box-item {
+        width: 24.70%;
+        min-height: 550px;
+    }
+    .af-service-box-item li img {
+        margin-top: 5px;
+    }
+    .af-service-box-item li p {
+        margin: 0 0 0 10%;
+    }
+    .af-feature-bottom-img img,
+    .af-feature-top-img img {
+        margin-top: 25%;
+    }
+    .af-testimonial-section {
+        width: 75%;
+        margin-bottom: 180px;
+    }
+    .af-testimonial-img {
+        width: 300px;
+        height: 300px;
+    }
+    .owl-carousel .owl-item img {
+        width: 100%;
+        height: auto;
+    }
+    .af-testimonial-thumb-wrapper {
+        width: 75%;
+        margin-left: 143px;
+    }
+    .af-testimonial-item-content p {
+        font-size: 23px;
+        line-height: 45px;
+    }
+    .af-testimonial-content-wrapper > img {
+        width: 70px;
+        left: 60%;
+        top: 16%;
+    }
+    .af-latest-posts-callout {
+        width: 34%;
+        margin-right: 50px;
+    }
+    .af-latest-posts-content-wrapper {
+        width: 60%;
+    }
+    .af-footer-top-border,
+    .af-footer-section {
+        background-size: auto;
+    }
+    .af-footer-top {
+        padding: 260px 72px 0px;
+    }
+
+    /* About page styles */
+    .af-primary-hero-section {
+        padding: 394px 0px 389px;
+        margin-top: -411px;
+    }
+    .af-primary-hero-section h1 {
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .af-about-video-section {
+        margin-top: -150px;
+    }
+    .af-about-video-content {
+        width: 51%;
+    }
+    .af-about-video-content h2 {
+        font-size: 43px;
+        line-height: 60px;
+    }
+    .af-icon-box {
+        width: 45%;
+    }
+    .af-iconbox-content {
+        width: 83%;
+    }
+    .af-project-slide-content h2 {
+        font-size: 45px;
+    }
+    .af-project-slide-img {
+        height: 240px;
+    }
+    .owl-carousel .owl-item img {
+
+    }
+    .af-about-calltoaction-section {
+        padding: 88px 0px 0px;
+        position: relative;
+    }
+    .af-team-section {
+        margin-top: -65px;
+    }
+    .af-single-team-card {
+        width: 24.1%;
+        margin: 1%;
+    }
+    .af-about-testimonial-client-img img {
+        width: 80%;
+    }
+    .af-about-testimonial-brand-logo-wrapper {
+        width: 60%;
+        margin-left: 121px;
+    }
+    .af-about-logo-wrapper img {
+        width: 108px;
     }
 }
 
