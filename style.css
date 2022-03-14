@@ -184,15 +184,9 @@ iframe{
 }
 .af-navigation{
     width: 780px;
-}
-.af-navigation ul{
-    width: 100%;
     text-align: center;
 }
-.af-navigation li{
-    display: inline-block;
-}
-.af-navigation li a {
+.af-navigation a {
     display: inline-block;
     padding: 5px 20px;
     color: #ffffff;
@@ -200,7 +194,9 @@ iframe{
     font-size: 16px;
     line-height: 18.77px;
 }
-
+.af-navigation a.af-mobile-toggle-icon{
+    display: none;
+}
 .af-header-button{
     max-width: 150px;
 }
@@ -222,6 +218,23 @@ iframe{
 }
 .af-header-primary-section .af-header-trnsparent {
     padding: 25px 0px 64px;
+}
+
+/* responsive menu style in header */
+.af-topnav {
+  overflow: hidden;
+}
+.af-topnav a {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 18.77px;
+}
+.af-topnav .af-mobilemenu-icon {
+  display: none;
+  font-size: 25px
 }
 
 /*

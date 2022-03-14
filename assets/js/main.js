@@ -1,6 +1,6 @@
 /*
- * Script calls
- * Desc: contains all external jQuery plugins calls
+ * Script calls & functions
+ * Desc: contains all external jQuery plugins calls & custom functions
  *
  * File: main.js
  * Version: 1.0
@@ -38,16 +38,6 @@
       /*
        * Testimonial carousel
        */
-      // $(document).ready(function(){
-      //   $('.owl-carousel').owlCarousel({
-      //      items : 1,
-      //      // loop  : true,
-      //      margin: 250,
-      //      nav    : true,
-      //      dots   : false,
-      //      navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
-      //   });
-      // });
 
       $('.owl-carousel').owlCarousel({
          items : 1,
@@ -58,9 +48,9 @@
          navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
       });
 
-      // /*
-      //  * Project carousel
-      //  */
+      /*
+       * Project carousel
+       */
       $('.owl-project').owlCarousel({
          items : 1,
          // loop  : true,
@@ -71,3 +61,16 @@
       });
 
 })( jQuery );
+
+
+/*
+ * Mobile menu toggle
+ */
+function afToggleIcon() {
+  var x = document.getElementById("afnav");
+  if (x.className === "af-nav") {
+    x.className += " af-responsive";
+  } else {
+    x.className = "af-nav";
+  }
+}

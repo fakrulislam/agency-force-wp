@@ -1,11 +1,90 @@
 /* ==========================================================================
-   Responsive Design.
-   These examples override the primary ('mobile first') styles.
+   Responsive Styles.
+   These override the primary ('mobile first') styles.
    Modify as content requires.
 
+   Default: Laptop/Desktop Device (1024px & after)
    File: responsive.css
    Version: 1.0
    ========================================================================== */
+
+/*
+* Mobile Device
+* Range: 767px & before
+*
+* If "device-width is equal to OR less than 767px", then apply {styles}
+*/
+@media screen and (max-width: 767px){
+
+    .af-container{
+        width: 85%;
+    }
+    .af-logo {
+        width: 40%;
+    }
+    .af-navigation {
+        width: 50%;
+        text-align: center;
+        float: right;
+        position: relative;
+    }
+    .af-header-button {
+        display: none;
+    }
+    .af-navigation a {
+        display: none;
+    }
+    .af-navigation a.af-mobile-toggle-icon {
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        padding: 5px 0px;
+    }
+    .af-navigation .af-nav{}
+    .af-responsive {
+        position: absolute;
+        right: 0;
+        top: 48px;
+        background: #dddddd33;
+        border-radius: 3px;
+        padding: 15px 0px;
+    }
+    .af-navigation .af-responsive a {
+        display: block;
+        text-align: center;
+        padding: 10px 50px;
+    }
+    .af-navigation .af-responsive a:hover{
+        background: #dddddd33;
+    }
+
+}
+
+/*
+* Tablet Device
+* Range: 768px - 1023px
+*
+* If "device-width is equal to OR greater than 768px"
+* AND "device-width" is equal to OR less than 1023px, then apply {styles}
+*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .af-container{
+        width: 85%;
+    }
+}
+
+/*
+* Laptop & Desktop Device (Default Style)
+* Range: 1024px & after
+*
+* If "device-width is equal to OR greater than 1024px", then apply {styles}
+*/
+/* @media screen and (min-width: 1024px){
+
+} */
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
