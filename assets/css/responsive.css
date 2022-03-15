@@ -64,9 +64,19 @@
     .af-navigation .af-responsive a:hover{
         background: #dddddd33;
     }
+    .af-hero-content {
+    	width: 100%;
+    	margin-top: 35px;
+    	float: none;
+    }
+    .af-hero-img {
+    	width: 100%;
+    	float: none;
+    	text-align: center;
+    }
     .af-hero-content h1 {
-        font-size: 20px;
-        line-height: 35px;
+    	font-size: 30px;
+    	line-height: 47px;
     }
     .af-hero-content p {
         font-size: 13px;
@@ -74,8 +84,9 @@
         margin-bottom: 20px;
     }
     .af-hero-img img {
-        margin-top: 100px;
-        margin-left: 0px;
+    	margin-top: 50px;
+    	margin-left: 0px;
+    	width: 70%;
     }
     .af-hero-content a.af-hero-button {
         padding: 15px 20px;
@@ -86,14 +97,14 @@
         position: relative;
     }
     .af-hero-empty-space {
-        height: 470px;
+    	height: 130px;
     }
     .af-logo-showcase {
         padding: 20px;
     }
     .af-logo-showcase img {
-        width: 42px;
-        margin: 0px 15px;
+    	width: 35px;
+    	margin: 0px 10px;
     }
     .af-logo-showcase-section {
         margin-top: -32px;
@@ -166,12 +177,12 @@
         float: none;
     }
     .af-testimonial-img {
-        width: 360px;
-        height: 360px;
+    	width: 320px;
+    	height: 320px;
     }
     .af-testimonial-img img {
-        width: 360px;
-        height: 360px;
+    	width: 320px;
+    	max-height: 320px;
     }
     .af-testimonial-item-content {
         width: 100%;
@@ -179,9 +190,12 @@
         margin-top: 90px;
     }
     .af-testimonial-thumb-wrapper {
-        width: 70%;
-        margin: -20px auto 0;
-        padding: 20px;
+    	width: 75%;
+    	margin: -20px auto 0;
+    	padding: 20px;
+    }
+    .af-icon-box-content-wrapper .af-icon-box:first-child {
+    	padding-right: 0px;
     }
     .af-testimonial-content-wrapper > img {
         width: 30px;
@@ -282,9 +296,13 @@
         width: 100%;
         margin-bottom: 50px;
     }
+    .af-iconbox-img {
+    	margin-right: 15px;
+    	width: 14%;
+    }
     .af-iconbox-content {
-        float: right;
-        width: 82%;
+    	float: right;
+    	width: 80%;
     }
     .af-icon-box-content-wrapper .af-icon-box:last-child {
         margin-bottom: 0px;
@@ -352,7 +370,8 @@
     }
     .af-team-title h2,
     .af-about-testimonial-title h2 {
-        font-size: 44px;
+    	font-size: 35px;
+    	line-height: 45px;
     }
     .af-about-testimonial-thumb {
         width: 100%;
@@ -364,9 +383,8 @@
         margin-top: 100px;
     }
     .af-about-testimonial-brand-logo-wrapper {
-        width: 60%;
-        margin-top: -60px;
-        margin-left: 116px;
+    	width: 70%;
+    	margin: -60px auto 0px 50px;
     }
 
     /* service page styles */
@@ -407,6 +425,10 @@
     .af-right-column {
         width: 100%;
         float: none;
+    }
+    .af-blog-featured-content .af-post-item-content h1 a {
+    	font-size: 22px;
+    	line-height: 40px;
     }
 
     /* blog detail style */
@@ -478,6 +500,27 @@
     .af-post-meta-wrapper h1 {
         font-size: 27px;
         line-height: 40px;
+    }
+
+    /* contact page styles */
+    .af-contact-form-wrapper {
+        width: 60%;
+        float: none;
+        margin-bottom: 50px;
+        margin: -20% auto 0%;
+    }
+    .af-contact-form-wrapper h1 {
+        font-size: 44px;
+        line-height: 65px;
+    }
+    .af-contact-info {
+        width: 100%;
+        text-align: center;
+        margin: 100px 0px;
+    }
+    .af-contact-form-wrapper form .af-fname-field,
+    .af-contact-form-wrapper form .af-lname-field {
+        width: 75%;
     }
 
 }
@@ -862,6 +905,22 @@
     }
     .af-post-comment p a {
         font-size: 15px;
+    }
+
+    /* contact page styles */
+    .af-contact-form-wrapper {
+        width: 60%;
+        float: none;
+        margin-bottom: 50px;
+    }
+    .af-contact-info {
+        width: 100%;
+        text-align: center;
+        margin: 100px 0px;
+    }
+    .af-contact-form-wrapper form .af-fname-field,
+    .af-contact-form-wrapper form .af-lname-field {
+        width: 65%;
     }
 }
 
