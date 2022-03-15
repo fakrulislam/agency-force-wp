@@ -233,8 +233,7 @@
         padding-bottom: 50px;
     }
     .af-footer-column h4 {
-        border-bottom: 1px solid #dddddd78;
-        padding-bottom: 20px;
+
     }
     .af-footer-top-border {
         height: 153px;
@@ -260,6 +259,10 @@
         padding: 0px;
         margin-bottom: 25px;
         float: none;
+    }
+    .af-about-video-content h2 {
+        font-size: 35px;
+        line-height: 50px;
     }
     .af-about-video {
         width: 100%;
@@ -373,6 +376,9 @@
     .af-container{
         width: 85%;
     }
+    .af-header-transparent-section {
+        position: relative;
+    }
     .af-logo {
         width: 20%;
     }
@@ -382,12 +388,17 @@
     .af-header-button {
         width: 18%;
     }
-    .af-navigation a{
-        padding: 10px;
+    .af-navigation a {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .af-header-button a {
+        font-size: 14px;
+        padding: 9px 20px;
     }
     .af-hero-content h1 {
-        font-size: 35px;
-        line-height: 60px;
+        font-size: 28px;
+        line-height: 47px;
     }
     .af-hero-content p {
         font-size: 18px;
@@ -398,20 +409,29 @@
     }
     .af-home-hero-section {
         padding: 132px 0px 16px;
+        position: relative;
+    }
+    .af-logo-showcase-section {
+        margin-top: -39px;
+        position: relative;
     }
     .af-logo-showcase {
-        padding: 50px;
+        padding: 30px;
     }
     .af-logo-showcase img {
         width: 70px;
-        margin: 0px 39px;
+        margin: 0px 20px;
+    }
+    .af-hero-empty-space {
+        height: 560px;
     }
     .af-service-boxes-container > p {
         padding: 0% 20%;
     }
     .af-service-box-item {
-        width: 24.70%;
+        width: 22%;
         min-height: 550px;
+        margin-bottom: 25px;
     }
     .af-service-box-item li img {
         margin-top: 5px;
@@ -427,17 +447,22 @@
         width: 75%;
         margin-bottom: 180px;
     }
+    .af-testimonial-img-wrapper {
+        margin-top: 50px;
+    }
     .af-testimonial-img {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     .owl-carousel .owl-item img {
         width: 100%;
         height: auto;
     }
     .af-testimonial-thumb-wrapper {
-        width: 75%;
-        margin-left: 143px;
+        width: 92%;
+        margin-left: 74px;
+        margin-top: -65px;
+        padding: 10px;
     }
     .af-testimonial-item-content p {
         font-size: 23px;
@@ -448,12 +473,18 @@
         left: 60%;
         top: 16%;
     }
+    .af-testimoial-thumb-content p {
+        font-size: 14px;
+    }
     .af-latest-posts-callout {
-        width: 34%;
-        margin-right: 50px;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 137px;
+        float: none;
     }
     .af-latest-posts-content-wrapper {
-        width: 60%;
+        width: 100%;
+        float: none;
     }
     .af-footer-top-border,
     .af-footer-section {
@@ -462,61 +493,138 @@
     .af-footer-top {
         padding: 260px 72px 0px;
     }
+    .af-footer-column {
+        float: left;
+        width: 50%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .af-footer-bottom {
+        margin-top: 10px;
+        padding-bottom: 35px;
+    }
 
     /* About page styles */
     .af-primary-hero-section {
-        padding: 394px 0px 389px;
-        margin-top: -411px;
+        padding: 446px 0px 473px;
+        margin-top: -464px;
     }
     .af-primary-hero-section h1 {
-        font-size: 50px;
-        line-height: 80px;
+        font-size: 35px;
+        line-height: 50px;
     }
     .af-about-video-section {
-        margin-top: -150px;
+        margin-top: -227px;
     }
     .af-about-video-content {
-        width: 51%;
+        width: 50%;
     }
     .af-about-video-content h2 {
-        font-size: 43px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 50px;
     }
     .af-icon-box {
-        width: 45%;
+        width: 43%;
+    }
+    .af-iconbox-img {
+        margin-right: 20px;
+        width: 20%;
     }
     .af-iconbox-content {
-        width: 83%;
+        width: 71%;
+    }
+    .af-iconbox-img img {
+        width: 50px;
     }
     .af-project-slide-content h2 {
         font-size: 45px;
     }
     .af-project-slide-img {
-        height: 240px;
+        height: 245px;
+        margin-top: 120px;
+        width: 350px;
+        margin-right: 0px;
+    }
+    .af-project-slide-content {
+        width: 43%;
     }
     .owl-carousel .owl-item img {
 
     }
     .af-about-calltoaction-section {
-        padding: 88px 0px 0px;
+        padding: 80px 0px 0px;
         position: relative;
     }
+    .af-about-calltoaction-bglayer {
+        padding: 80px 0px 74px;
+        margin-bottom: -116px;
+    }
+    .af-calltoaction-title h2 {
+        font-size: 30px;
+        line-height: 45px;
+        margin: 0px;
+    }
+    .af-calltoaction-button a {
+        margin-top: 20px;
+    }
     .af-team-section {
-        margin-top: -65px;
+        margin-top: 25px;
+    }
+    .af-team-title p {
+        margin: 0% 15% 5%;
     }
     .af-single-team-card {
-        width: 24.1%;
+        width: 21.8%;
         margin: 1%;
+    }
+    .af-team-title h2 {
+        font-size: 44px;
+    }
+    .af-team-title {
+        margin-top: 50px;
+    }
+    .af-single-team-card h3 {
+        font-size: 18px;
+    }
+    .af-about-testimonial-title h2 {
+        font-size: 44px;
+    }
+    .af-about-testimonial-title p {
+        padding: 0% 15%;
+    }
+    .af-about-testimonial-title {
+        margin-bottom: 73px;
     }
     .af-about-testimonial-client-img img {
         width: 80%;
     }
     .af-about-testimonial-brand-logo-wrapper {
-        width: 60%;
-        margin-left: 121px;
+        width: 70%;
+        margin-left: 114px;
+        padding: 15px 15px 12px;
+        margin-top: -111px;
+    }
+    .af-about-testimonial-content {
+        width: 42%;
+    }
+    .af-about-testimonial-brand-logo {
+        width: 34%;
+    }
+    .af-about-testimonial-brand-logo-content h4 {
+        font-size: 18px;
+    }
+    .af-about-testimonial-brand-logo-content p {
+        font-size: 13px;
+    }
+    .af-about-testimonial-thumb {
+        width: 45%;
     }
     .af-about-logo-wrapper img {
-        width: 108px;
+        width: 68px;
+    }
+    .af-about-testimonial-content p {
+        font-size: 26px;
+        line-height: 47px;
     }
 }
 
