@@ -64,9 +64,19 @@
     .af-navigation .af-responsive a:hover{
         background: #dddddd33;
     }
+    .af-hero-content {
+    	width: 100%;
+    	margin-top: 35px;
+    	float: none;
+    }
+    .af-hero-img {
+    	width: 100%;
+    	float: none;
+    	text-align: center;
+    }
     .af-hero-content h1 {
-        font-size: 20px;
-        line-height: 35px;
+    	font-size: 30px;
+    	line-height: 47px;
     }
     .af-hero-content p {
         font-size: 13px;
@@ -74,8 +84,9 @@
         margin-bottom: 20px;
     }
     .af-hero-img img {
-        margin-top: 100px;
-        margin-left: 0px;
+    	margin-top: 50px;
+    	margin-left: 0px;
+    	width: 70%;
     }
     .af-hero-content a.af-hero-button {
         padding: 15px 20px;
@@ -86,14 +97,14 @@
         position: relative;
     }
     .af-hero-empty-space {
-        height: 470px;
+    	height: 130px;
     }
     .af-logo-showcase {
         padding: 20px;
     }
     .af-logo-showcase img {
-        width: 42px;
-        margin: 0px 15px;
+    	width: 35px;
+    	margin: 0px 10px;
     }
     .af-logo-showcase-section {
         margin-top: -32px;
@@ -130,8 +141,12 @@
     .af-feature-top-content {
         width: 100%;
     }
+    .af-service-icon-box-section {
+        margin-top: 0px;
+    }
     .af-feature-section-top {
-        margin: 100px 0px 100px;
+        margin: 100px 0px 0px;
+        padding-top: 100px;
     }
     .af-feature-bottom-content {
         width: 100%;
@@ -162,12 +177,12 @@
         float: none;
     }
     .af-testimonial-img {
-        width: 360px;
-        height: 360px;
+    	width: 320px;
+    	height: 320px;
     }
     .af-testimonial-img img {
-        width: 360px;
-        height: 360px;
+    	width: 320px;
+    	max-height: 320px;
     }
     .af-testimonial-item-content {
         width: 100%;
@@ -175,9 +190,12 @@
         margin-top: 90px;
     }
     .af-testimonial-thumb-wrapper {
-        width: 70%;
-        margin: -20px auto 0;
-        padding: 20px;
+    	width: 75%;
+    	margin: -20px auto 0;
+    	padding: 20px;
+    }
+    .af-icon-box-content-wrapper .af-icon-box:first-child {
+    	padding-right: 0px;
     }
     .af-testimonial-content-wrapper > img {
         width: 30px;
@@ -243,13 +261,14 @@
         margin-top: -395px;
     }
     .af-primary-hero-section {
-        padding: 200px 0px;
-        margin-top: -162px;
+        padding: 220px 0px;
+        margin-top: -165px;
         background-size: cover;
     }
     .af-primary-hero-section h1 {
-        font-size: 35px;
-        line-height: 55px;
+        font-size: 50px;
+        line-height: 75px;
+        margin: 0% 2%;
     }
     .af-about-video-section {
         margin-top: 50px;
@@ -277,9 +296,13 @@
         width: 100%;
         margin-bottom: 50px;
     }
+    .af-iconbox-img {
+    	margin-right: 15px;
+    	width: 14%;
+    }
     .af-iconbox-content {
-        float: right;
-        width: 82%;
+    	float: right;
+    	width: 80%;
     }
     .af-icon-box-content-wrapper .af-icon-box:last-child {
         margin-bottom: 0px;
@@ -347,7 +370,8 @@
     }
     .af-team-title h2,
     .af-about-testimonial-title h2 {
-        font-size: 44px;
+    	font-size: 35px;
+    	line-height: 45px;
     }
     .af-about-testimonial-thumb {
         width: 100%;
@@ -359,10 +383,146 @@
         margin-top: 100px;
     }
     .af-about-testimonial-brand-logo-wrapper {
-        width: 60%;
-        margin-top: -60px;
-        margin-left: 116px;
+    	width: 70%;
+    	margin: -60px auto 0px 50px;
     }
+
+    /* service page styles */
+    .af-service-icon-box-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .af-service-icon-box-item:last-child{
+        margin-bottom: 0px
+    }
+    .af-service-page-calltoaciton-section{
+        padding: 40px 0px 0px;
+        position: inherit;
+        background-size: cover;
+        margin-bottom: -235px;
+    }
+    .af-service-page-calltoaciton-section .af-about-calltoaction-bglayer {
+        padding: 20px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    /* blog page styles */
+    .af-blogpage-bg-layer h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .af-left-column {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .af-blog-posts .af-blog-post-item {
+        width: 100%;
+        float: none;
+        margin-right: 0px;
+    }
+    .af-right-column {
+        width: 100%;
+        float: none;
+    }
+    .af-blog-featured-content .af-post-item-content h1 a {
+    	font-size: 22px;
+    	line-height: 40px;
+    }
+
+    /* blog detail style */
+    .af-blog-single-hero-section {
+        padding: 125px 0px 0px 0px;
+    }
+    .af-blog-single-content-section {
+        margin-top: 70px;
+    }
+    .af-post-featured-thumb {
+        height: inherit;
+    }
+    .af-post-author {
+        width: 100%;
+        margin-right: 0px;
+        float: none;
+        margin-bottom: 50px;
+    }
+    .af-post-author img {
+        width: 10%;
+        margin-right: 15px;
+    }
+    .af-author-name {
+        width: 84%;
+    }
+    .af-author-name h4 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .af-author-name a {
+        font-size: 13px;
+    }
+    .af-post-date {
+        width: 45%;
+        margin-right: 30px;
+        margin-top: -7px;
+    }
+    .af-post-date img {
+        width: 15px;
+    }
+    .af-post-comment {
+        width: 45%;
+        margin-top: -6px;
+    }
+    .af-post-comment img {
+        width: 15px;
+    }
+    .af-post-date p {
+        margin: 0px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .af-post-comment p {
+        margin: -9px;
+    }
+    .af-post-comment p a {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .af-post-content {
+        width: 100%;
+        float: none;
+    }
+    .af-post-sidebar {
+        width: 100%;
+        float: none;
+        margin-top: 100px;
+    }
+    .af-post-meta-wrapper h1 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    /* contact page styles */
+    .af-contact-form-wrapper {
+        width: 60%;
+        float: none;
+        margin-bottom: 50px;
+        margin: -20% auto 0%;
+    }
+    .af-contact-form-wrapper h1 {
+        font-size: 44px;
+        line-height: 65px;
+    }
+    .af-contact-info {
+        width: 100%;
+        text-align: center;
+        margin: 100px 0px;
+    }
+    .af-contact-form-wrapper form .af-fname-field,
+    .af-contact-form-wrapper form .af-lname-field {
+        width: 75%;
+    }
+
 }
 
 /*
@@ -555,6 +715,25 @@
         padding: 80px 0px 0px;
         position: relative;
     }
+    .af-service-page-calltoaciton-section {
+        padding: 80px 0px 0px;
+        position: inherit;
+        margin-bottom: -228px;
+    }
+    .af-service-page-calltoaciton-section .af-calltoaction-button a{
+        margin-top: 5px;
+    }
+    .af-service-page-calltoaciton-section .af-calltoaction-title h2 {
+        font-size: 27px;
+        line-height: 38px;
+        margin: 0px;
+    }
+    .af-calltoaction-button a {
+        padding: 15px 35px;
+    }
+    .af-service-page-calltoaciton-section .af-calltoaction-title {
+        width: 58%;
+    }
     .af-about-calltoaction-bglayer {
         padding: 80px 0px 74px;
         margin-bottom: -116px;
@@ -625,6 +804,123 @@
     .af-about-testimonial-content p {
         font-size: 26px;
         line-height: 47px;
+    }
+
+    /* service page styles */
+    .af-service-box-section-bg {
+        margin-top: -284px;
+    }
+    .af-service-page-calltoaciton-section .af-about-calltoaction-bglayer {
+        background-size: cover;
+        border-radius: 5px;
+    }
+    .af-service-box-item {
+        width: 21%;
+    }
+    .af-service-icon-box-item {
+        width: 25%;
+    }
+    .af-service-icon-box-item h3 {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    /* blog page styles */
+    .af-left-column {
+        width: 66%;
+    }
+    .af-right-column {
+        width: 30%;
+    }
+    .af-blog-posts .af-blog-post-item {
+        width: 46.5%;
+    }
+    .af-blogpage-bg-layer h1 {
+        font-size: 44px;
+        line-height: 70px;
+    }
+    .af-post-item-content {
+        padding: 10px;
+    }
+    .af-blog-post-item h1 a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .af-blog-post-item a.af-post-readmore {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px;
+    }
+    .af-blog-post-item p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .af-blog-featured-content .af-post-item-content h1 a {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    /* blog detail style */
+    .af-blog-single-hero-section {
+        padding: 125px 0px 0px 0px;
+    }
+    .af-blog-single-content-section {
+        margin-top: 70px;
+    }
+    .af-post-featured-thumb {
+        height: inherit;
+    }
+    .af-post-author {
+        width: 30%;
+        margin-right: 30px;
+    }
+    .af-post-author img {
+        width: 20%;
+        margin-right: 15px;
+    }
+    .af-author-name {
+        width: 72%;
+    }
+    .af-author-name h4 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .af-author-name a {
+        font-size: 13px;
+    }
+    .af-post-date {
+        width: 30%;
+        margin-right: 30px;
+        margin-top: -7px;
+    }
+    .af-post-date img {
+        width: 40px;
+    }
+    .af-post-comment {
+        width: 27%;
+        margin-top: 0px;
+    }
+    .af-post-comment img {
+        width: 40px;
+    }
+    .af-post-comment p a {
+        font-size: 15px;
+    }
+
+    /* contact page styles */
+    .af-contact-form-wrapper {
+        width: 60%;
+        float: none;
+        margin-bottom: 50px;
+    }
+    .af-contact-info {
+        width: 100%;
+        text-align: center;
+        margin: 100px 0px;
+    }
+    .af-contact-form-wrapper form .af-fname-field,
+    .af-contact-form-wrapper form .af-lname-field {
+        width: 65%;
     }
 }
 
