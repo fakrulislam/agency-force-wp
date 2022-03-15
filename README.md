@@ -13,8 +13,9 @@
 
 #### [Preview](https://fakrulislam.me/portfolio/static-site/agency-force-html/index.html)
 
-#### [Designed by mursyiduchy](https://elements.envato.com/agency-force-02-company-profile-website-template-D9M6SES)
+[Designed by mursyiduchy](https://elements.envato.com/agency-force-02-company-profile-website-template-D9M6SES)
 
 
-**Uses License: NOT ALLOWED!**
+
+**Uses permission: NOT ALLOWED.**
 
