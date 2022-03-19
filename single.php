@@ -1,30 +1,14 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<?php
+/**
+* The template for displaying all single posts
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+* @version 1.0
+* @since agencyforcewp 1.0
+*/
+?>
 
-<head>
-    <meta charset="utf-8">
-    <title>Agency Force</title>
-    <meta name="description" content="Creative Agency">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- apple touch icon -->
-    <link rel="apple-touch-icon" href="assets/icon.png">
-    <!-- site favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
-    <!-- Google Fonts cdn -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans|Sofia|Trirong">
-    <!-- html5-boilerplate -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- Site main css: desktop -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Site responsive css: mobile & tablet -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- video modal -->
-    <link rel="stylesheet" href="assets/css/modal-video.min.css">
-    <!-- owl carouse -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <!-- fontawesome cdn -->
-    <script src="https://use.fontawesome.com/d83818647f.js"></script>
-</head>
+<?php get_header(); ?>
 
 <body>
 
@@ -32,17 +16,21 @@
         <div class="af-container">
             <div class="af-header-trnsparent">
                 <div class="af-logo af-floatleft">
-                    <a href="index.html"><img src="assets/img/logo.svg" alt="agency force"></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="agency force" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                    </a>
                 </div>
                 <div class="af-navigation af-floatleft">
                     <div class="af-nav" id="afnav">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                        <?php /* Primary navigation */
+        					wp_nav_menu( array(
+        					  'theme_location' => 'primary-menu',
+        					  'depth' => 1,
+        					  'container' => false,
+        					  'fallback_cb' => ''
+        					  )
+        					);
+                        ?>
                     </div>
                     <a href="javascript:void(0);" class="af-mobile-toggle-icon" onclick="afToggleIcon()">
                         <i class="fa fa-bars"></i>
@@ -62,24 +50,24 @@
     <section class="af-blog-single-content-section clearfix">
         <div class="af-container">
             <div class="af-post-featured-thumb">
-                <img src="assets/img/post-single-thumb.jpg" alt="post thumbnail">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="post thumbnail">
             </div>
             <div class="af-post-meta-wrapper">
                 <h1>E-Commerce Design Trends That Make Online Shopping Better.</h1>
                 <div class="af-post-meta clearfix">
                     <div class="af-post-author clearfix">
-                        <img src="assets/img/post-author.jpg" alt="author">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-author.jpg" alt="author">
                         <div class="af-author-name">
                             <h4>Izumi Katsuyoshi</h4>
                             <a href="#">UX Research</a>
                         </div>
                     </div>
                     <div class="af-post-date clearfix">
-                        <img src="assets/img/icon-calendar.svg" alt="publish date">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-calendar.svg" alt="publish date">
                         <p>21 Maret 2020 - 14.00 PM</p>
                     </div>
                     <div class="af-post-comment clearfix">
-                        <img src="assets/img/icon-comment.svg" alt="comment">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-comment.svg" alt="comment">
                         <p><a href="#">120 Comment</a></p>
                     </div>
                 </div>
@@ -92,7 +80,7 @@
                     <h3>Mobile Shopping</h3>
                     <p>The impetuous progress of mobile technology has changed the way we access and interact with websites. Today the majority (65%) of traffic for retail websites comes from smartphones with 53% of sales happening via the same channel. What it means is that the necessity for responsive design is not an empty sound, that everybody has heard a thousand times, but a must. Optimizing the design for phones and tablets to meet the consumers where they are will help keep them happy and coming for more.</p>
                     <p>This trend is not losing its relevance, but becoming more powerful. It’s so important now that many online retailers are focusing primarily on the mobile versions of their websites and then adapt to desktop, and they have a point. For example, you can notice how many long-scrolling e-commerce pages there are nowadays and how many websites sometimes incorporate the mobile design elements like the hamburger menu into desktop designs.</p>
-                    <img src="assets/img/single-post-thumb.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/single-post-thumb.jpg" alt="">
                     <h4>The combination of landing pages and product pages</h4>
                     <p>A traditional e-commerce website structure is designed in such a way that a customer starts their journey from the homepage and then goes further by choosing a category on the menu and so on. However, today it’s common for a customer to come from a SERP page, an ad, or a social media post that leads straight to the product or category page.</p>
                     <p>That is why more and more online retailers design their product pages (or, at least, category pages) using the elements of landing pages like unique selling propositions, calls-to-action, hero shots, social proof, etc. This way the consumers get all the information they need about the store and the product is showcased in a more flattering and informative way. Landing pages are 25% more likely to convert.</p>
@@ -100,11 +88,11 @@
                 <div class="af-post-sidebar af-floatright">
                     <div class="af-post-sidebar-item">
                         <h2>Widget Heading</h2>
-                        <img src="assets/img/sidebar-ads.jpg" alt="ads">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sidebar-ads.jpg" alt="ads">
                     </div>
                     <div class="af-post-sidebar-item">
                         <h2>Widget Heading</h2>
-                        <img src="assets/img/sidebar-ads.jpg" alt="ads">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sidebar-ads.jpg" alt="ads">
                     </div>
                 </div> <!-- sidebar section -->
             </div>
@@ -126,67 +114,7 @@
         </div>
     </section> <!-- call to action section -->
 
-    <section class="af-footer-top-border"></section>
-    <section class="af-footer-section">
-        <div class="af-container">
-            <div class="af-footer-top clearfix">
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Features</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>About us</h4>
-                    <ul>
-                        <li><a href="#">Our team</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="#">info@yourcompany.com</a></li>
-                        <li><a href="#">11-000-0000</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="af-footer-bottom clearfix">
-                <div class="af-footer-social-links">
-                    <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt="facebook"></a>
-                    <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt="twitter"></a>
-                    <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt="instagram"></a>
-                </div>
-                <div class="af-footer-copyright">
-                    <p>&copy; 2022 - All right reserved</p>
-                </div>
-            </div>
-        </div>
-    </section> <!-- footer section-->
-
-    <!-- Site scripts -->
-    <!--=============-->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- OWL carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Video modal -->
-    <script src="assets/js/modal-video.min.js"></script>
-    <!-- html5-boilerplate -->
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <!-- Site main js -->
-    <script src="assets/js/main.js"></script>
+    <?php get_footer(); ?>
 </body>
 
 </html>

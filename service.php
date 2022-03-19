@@ -1,30 +1,14 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<?php
+/**
+* Template Name: Service Page
+* Desc: Outputs service page contents
+*
+* @version 1.0
+* @since agencyforcewp 1.0
+*/
+?>
 
-<head>
-    <meta charset="utf-8">
-    <title>Agency Force</title>
-    <meta name="description" content="Creative Agency">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- apple touch icon -->
-    <link rel="apple-touch-icon" href="assets/icon.png">
-    <!-- site favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
-    <!-- Google Fonts cdn -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans|Sofia|Trirong">
-    <!-- html5-boilerplate -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- Site main css: desktop -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Site responsive css: mobile & tablet -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- video modal -->
-    <link rel="stylesheet" href="assets/css/modal-video.min.css">
-    <!-- owl carouse -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <!-- fontawesome cdn - version:4 -->
-    <script src="https://use.fontawesome.com/d83818647f.js"></script>
-</head>
+<?php get_header(); ?>
 
 <body>
 
@@ -32,17 +16,21 @@
         <div class="af-container">
             <div class="af-header-trnsparent">
                 <div class="af-logo af-floatleft">
-                    <a href="index.html"><img src="assets/img/logo.svg" alt="agency force"></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="agency force" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                    </a>
                 </div>
                 <div class="af-navigation af-floatleft">
                     <div class="af-nav" id="afnav">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                        <?php /* Primary navigation */
+        					wp_nav_menu( array(
+        					  'theme_location' => 'primary-menu',
+        					  'depth' => 1,
+        					  'container' => false,
+        					  'fallback_cb' => ''
+        					  )
+        					);
+                        ?>
                     </div>
                     <a href="javascript:void(0);" class="af-mobile-toggle-icon" onclick="afToggleIcon()">
                         <i class="fa fa-bars"></i>
@@ -70,60 +58,60 @@
                 <!-- Service box container -->
                 <div class="af-service-boxes af-service-box-servicepage">
                     <div class="af-service-box-item service-box-item-bg1">
-                        <img src="assets/img/service-box-1-thumb.svg" alt="product management">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-box-1-thumb.svg" alt="product management">
                         <h3>Product Management</h3>
                         <p>Operational improvements through technology enhancements and/or service functions, we provide a fresh lens in helping you achieve your goals. Having specified, designed, and implemented proven market tools, we can get you where you need to go through:</p>
                         <ul>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="Process Refinement">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="Process Refinement">
                                 <p>Process Refinement</p>
                             </li>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="Workflow Optimization">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="Workflow Optimization">
                                 <p>Workflow Optimization</p>
                             </li>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="Product/Software Testing">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="Product/Software Testing">
                                 <p>Product/Software Testing</p>
                             </li>
                         </ul>
                     </div> <!-- end single service box -->
 
                     <div class="af-service-box-item service-box-item-bg2">
-                        <img src="assets/img/service-box-2-thumb.svg" alt="web development">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-box-2-thumb.svg" alt="web development">
                         <h3>Web Development</h3>
                         <p>Operational improvements through technology enhancements and/or service functions, we provide a fresh lens in helping you achieve your goals. Having specified, designed, and implemented proven market tools, we can get you where you need to go through:</p>
                         <ul>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="product management">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="product management">
                                 <p>Content Management System</p>
                             </li>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="product management">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="product management">
                                 <p>WordPress</p>
                             </li>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="product management">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="product management">
                                 <p>Front-end Development</p>
                             </li>
                         </ul>
                     </div> <!-- end single service box -->
 
                     <div class="af-service-box-item service-box-item-bg3">
-                        <img src="assets/img/service-box-3-thumb.svg" alt="Visual Design and Branding">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-box-3-thumb.svg" alt="Visual Design and Branding">
                         <h3>Visual Design and Branding</h3>
                         <p>Operational improvements through technology enhancements and/or service functions, we provide a fresh lens in helping you achieve your goals. Having specified, designed, and implemented proven market tools, we can get you where you need to go through:</p>
                         <ul>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="product management">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="product management">
                                 <p>Brand Identity</p>
                             </li>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="product management">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="product management">
                                 <p>UI/UX Design</p>
                             </li>
                             <li>
-                                <img src="assets/img/list-icon.svg" alt="product management">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/list-icon.svg" alt="product management">
                                 <p>Illustration</p>
                             </li>
                         </ul>
@@ -137,19 +125,19 @@
         <div class="af-container">
             <div class="af-service-icon-box-wrapper clearfix">
                 <div class="af-service-icon-box-item">
-                    <img src="assets/img/icon-research.svg" alt="research">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-research.svg" alt="research">
                     <h3>Research</h3>
                     <p>We shape brands through exploration and investigation, applying in-depth research to challenge assumptions at every turn.</p>
                 </div> <!-- icon box -->
 
                 <div class="af-service-icon-box-item">
-                    <img src="assets/img/icon-design.svg" alt="Design">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-design.svg" alt="Design">
                     <h3>Design</h3>
                     <p>We shape brands through exploration and investigation, applying in-depth research to challenge assumptions at every turn.</p>
                 </div> <!-- icon box -->
 
                 <div class="af-service-icon-box-item">
-                    <img src="assets/img/icon-implementation.svg" alt="implementation">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-implementation.svg" alt="implementation">
                     <h3>Implementation</h3>
                     <p>We shape brands through exploration and investigation, applying in-depth research to challenge assumptions at every turn.</p>
                 </div> <!-- icon box -->
@@ -161,7 +149,7 @@
         <div class="af-container">
             <div class="af-feature-top-wrapper">
                 <div class="af-feature-top-img af-floatleft">
-                    <img src="assets/img/delivery-orders.svg" alt="delivery orders">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/delivery-orders.svg" alt="delivery orders">
                 </div>
                 <div class="af-feature-top-content af-floatleft">
                     <h2>We like to find simple solutions to complex challenges.</h2>
@@ -181,7 +169,7 @@
                     <p>You need offer an experience that is not available elsewhere. Clean and creative HTMl template design for you.</p>
                     <div class="af-icon-box-wrapper">
                         <div class="af-icon-box-img af-floatleft">
-                            <img src="assets/img/laptop-icon.svg" alt="Web Development">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/laptop-icon.svg" alt="Web Development">
                         </div>
                         <div class="af-icon-box-content">
                             <h4>Web Development</h4>
@@ -190,7 +178,7 @@
                     </div>
                     <div class="af-icon-box-wrapper">
                         <div class="af-icon-box-img af-floatleft">
-                            <img src="assets/img/ui-ux-icon.svg" alt="UI/UX Design">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ui-ux-icon.svg" alt="UI/UX Design">
                         </div>
                         <div class="af-icon-box-content">
                             <h4>UI/UX Design</h4>
@@ -199,7 +187,7 @@
                     </div>
                 </div>
                 <div class="af-feature-bottom-img af-floatleft">
-                    <img src="assets/img/laptop.svg" alt="experience & creative work">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/laptop.svg" alt="experience & creative work">
                 </div>
             </div>
         </div>
@@ -220,67 +208,7 @@
         </div>
     </section> <!-- call to action section -->
 
-    <section class="af-footer-top-border"></section>
-    <section class="af-footer-section">
-        <div class="af-container">
-            <div class="af-footer-top clearfix">
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Features</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>About us</h4>
-                    <ul>
-                        <li><a href="#">Our team</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="#">info@yourcompany.com</a></li>
-                        <li><a href="#">11-000-0000</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="af-footer-bottom clearfix">
-                <div class="af-footer-social-links">
-                    <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt="facebook"></a>
-                    <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt="twitter"></a>
-                    <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt="instagram"></a>
-                </div>
-                <div class="af-footer-copyright">
-                    <p>&copy; 2022 - All right reserved</p>
-                </div>
-            </div>
-        </div>
-    </section> <!-- footer section-->
-
-    <!-- Site scripts -->
-    <!--=============-->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- OWL carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Video modal -->
-    <script src="assets/js/modal-video.min.js"></script>
-    <!-- html5-boilerplate -->
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <!-- Site main js -->
-    <script src="assets/js/main.js"></script>
+    <?php get_footer(); ?>
 </body>
 
 </html>

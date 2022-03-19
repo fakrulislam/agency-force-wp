@@ -1,30 +1,20 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @version 1.0
+ * @since agencyforcewp 1.0
+ */
+?>
 
-<head>
-    <meta charset="utf-8">
-    <title>Agency Force</title>
-    <meta name="description" content="Creative Agency">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- apple touch icon -->
-    <link rel="apple-touch-icon" href="assets/icon.png">
-    <!-- site favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
-    <!-- Google Fonts cdn -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans|Sofia|Trirong">
-    <!-- html5-boilerplate -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- Site main css: desktop -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Site responsive css: mobile & tablet -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- video modal -->
-    <link rel="stylesheet" href="assets/css/modal-video.min.css">
-    <!-- owl carouse -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <!-- fontawesome cdn -->
-    <script src="https://use.fontawesome.com/d83818647f.js"></script>
-</head>
+<?php get_header(); ?>
 
 <body>
 
@@ -32,17 +22,21 @@
         <div class="af-container">
             <div class="af-header-trnsparent">
                 <div class="af-logo af-floatleft">
-                    <a href="index.html"><img src="assets/img/logo.svg" alt="agency force"></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="agency force" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                    </a>
                 </div>
                 <div class="af-navigation af-floatleft">
                     <div class="af-nav" id="afnav">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                        <?php /* Primary navigation */
+        					wp_nav_menu( array(
+        					  'theme_location' => 'primary-menu',
+        					  'depth' => 1,
+        					  'container' => false,
+        					  'fallback_cb' => ''
+        					  )
+        					);
+                        ?>
                     </div>
                     <a href="javascript:void(0);" class="af-mobile-toggle-icon" onclick="afToggleIcon()">
                         <i class="fa fa-bars"></i>
@@ -67,7 +61,7 @@
                 <div class="af-left-column af-floatleft">
                     <div class="af-blog-featured-content">
                         <div class="af-blog-post-item">
-                            <img src="assets/img/blog-thumb.jpg" alt="blog thumb">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
                             <div class="af-post-item-content">
                                 <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                                 <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -77,7 +71,7 @@
                     </div>
                     <div class="af-blog-posts">
                         <div class="af-blog-post-item">
-                            <img src="assets/img/blog-thumb.jpg" alt="blog thumb">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
                             <div class="af-post-item-content">
                                 <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                                 <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -85,7 +79,7 @@
                             </div>
                         </div> <!-- blog post item -->
                         <div class="af-blog-post-item">
-                            <img src="assets/img/blog-thumb.jpg" alt="blog thumb">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
                             <div class="af-post-item-content">
                                 <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                                 <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -96,7 +90,7 @@
                 </div>
                 <div class="af-right-column af-floatright">
                     <div class="af-blog-post-item">
-                        <img src="assets/img/blog-thumb.jpg" alt="blog thumb">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
                         <div class="af-post-item-content">
                             <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                             <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -104,7 +98,7 @@
                         </div>
                     </div> <!-- blog post item -->
                     <div class="af-blog-post-item">
-                        <img src="assets/img/blog-thumb.jpg" alt="blog thumb">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
                         <div class="af-post-item-content">
                             <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                             <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -131,67 +125,7 @@
         </div>
     </section> <!-- call to action section -->
 
-    <section class="af-footer-top-border"></section>
-    <section class="af-footer-section">
-        <div class="af-container">
-            <div class="af-footer-top clearfix">
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Features</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>About us</h4>
-                    <ul>
-                        <li><a href="#">Our team</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="#">info@yourcompany.com</a></li>
-                        <li><a href="#">11-000-0000</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="af-footer-bottom clearfix">
-                <div class="af-footer-social-links">
-                    <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt="facebook"></a>
-                    <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt="twitter"></a>
-                    <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt="instagram"></a>
-                </div>
-                <div class="af-footer-copyright">
-                    <p>&copy; 2022 - All right reserved</p>
-                </div>
-            </div>
-        </div>
-    </section> <!-- footer section-->
-
-    <!-- Site scripts -->
-    <!--=============-->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- OWL carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Video modal -->
-    <script src="assets/js/modal-video.min.js"></script>
-    <!-- html5-boilerplate -->
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <!-- Site main js -->
-    <script src="assets/js/main.js"></script>
+    <?php get_footer(); ?>
 </body>
 
 </html>

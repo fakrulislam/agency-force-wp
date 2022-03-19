@@ -1,30 +1,14 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<?php
+/**
+* Template Name: About Page
+* Desc: Outputs about page contents
+*
+* @version 1.0
+* @since agencyforcewp 1.0
+*/
+?>
 
-<head>
-    <meta charset="utf-8">
-    <title>Agency Force</title>
-    <meta name="description" content="Creative Agency">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- apple touch icon -->
-    <link rel="apple-touch-icon" href="assets/icon.png">
-    <!-- site favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
-    <!-- Google Fonts cdn -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans|Sofia|Trirong">
-    <!-- html5-boilerplate -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- Site main css: desktop -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Site responsive css: mobile & tablet -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- video modal -->
-    <link rel="stylesheet" href="assets/css/modal-video.min.css">
-    <!-- owl carouse -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <!-- fontawesome cdn - version:4 -->
-    <script src="https://use.fontawesome.com/d83818647f.js"></script>
-</head>
+<?php get_header(); ?>
 
 <body>
 
@@ -32,17 +16,21 @@
         <div class="af-container">
             <div class="af-header-trnsparent">
                 <div class="af-logo af-floatleft">
-                    <a href="index.html"><img src="assets/img/logo.svg" alt="agency force"></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="agency force" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                    </a>
                 </div>
                 <div class="af-navigation af-floatleft">
                     <div class="af-nav" id="afnav">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                        <?php /* Primary navigation */
+        					wp_nav_menu( array(
+        					  'theme_location' => 'primary-menu',
+        					  'depth' => 1,
+        					  'container' => false,
+        					  'fallback_cb' => ''
+        					  )
+        					);
+                        ?>
                     </div>
                     <a href="javascript:void(0);" class="af-mobile-toggle-icon" onclick="afToggleIcon()">
                         <i class="fa fa-bars"></i>
@@ -70,7 +58,9 @@
                     <p>Quae fuerit causa, nollem me ab illo inventore veritatis et dolorem? sunt autem vel eum fugiat, quo aut quid est consecutus? laudem et voluptates omittantur maiorum voluptatum deleniti atque in malis dolor, non numquam eius modi tempora incidunt, ut summo bono, dolorem ipsum, quia non.</p>
                 </div>
                 <div class="af-about-video af-floatright">
-                    <a href="#" class="video-thumb js-modal-btn" data-video-id="mXMTzrGtyck"><img src="assets/img/about/video-thumb.png"/></a>
+                    <a href="#" class="video-thumb js-modal-btn" data-video-id="mXMTzrGtyck">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/video-thumb.png"/>
+                    </a>
                 </div>
             </div>
         </div>
@@ -81,7 +71,7 @@
             <div class="af-icon-box-content-wrapper clearfix">
                 <div class="af-icon-box af-floatleft">
                     <div class="af-iconbox-img">
-                        <img src="assets/img/about/icon-webdev.svg" alt="web development">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/icon-webdev.svg" alt="web development">
                     </div>
                     <div class="af-iconbox-content">
                         <h3>Web Development</h3>
@@ -91,7 +81,7 @@
 
                 <div class="af-icon-box af-floatright">
                     <div class="af-iconbox-img">
-                        <img src="assets/img/about/uiux-icon.svg" alt="UI/UX Design">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/uiux-icon.svg" alt="UI/UX Design">
                     </div>
                     <div class="af-iconbox-content">
                         <h3>UI/UX Design</h3>
@@ -113,7 +103,9 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                         </div>
                         <div class="af-project-slide-img">
-                            <a href="#" target="_blank"><img src="assets/img/about/slide-thumb.jpg" alt="Our Latest Project"></a>
+                            <a href="#" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/slide-thumb.jpg" alt="Our Latest Project">
+                            </a>
                         </div>
                     </div> <!-- project slide item -->
 
@@ -123,7 +115,9 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                         </div>
                         <div class="af-project-slide-img">
-                            <a href="#" target="_blank"><img src="assets/img/about/slide-thumb.jpg" alt="Our Latest Project"></a>
+                            <a href="#" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/slide-thumb.jpg" alt="Our Latest Project">
+                            </a>
                         </div>
                     </div> <!-- project slide item -->
 
@@ -133,7 +127,9 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                         </div>
                         <div class="af-project-slide-img">
-                            <a href="#" target="_blank"><img src="assets/img/about/slide-thumb.jpg" alt="Our Latest Project"></a>
+                            <a href="#" target="_blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/slide-thumb.jpg" alt="Our Latest Project">
+                            </a>
                         </div>
                     </div> <!-- project slide item -->
 
@@ -166,7 +162,7 @@
                 </div>
                 <div class="af-team-member-wrapper">
                     <div class="af-single-team-card af-floatleft">
-                        <img src="assets/img/about/team-female1.jpg" alt="Daisy Murphy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/team-female1.jpg" alt="Daisy Murphy">
                         <h4>Designer</h4>
                         <h3>Daisy Murphy</h3>
                         <p>Primum igitur, quid malum, sensu iudicari, sed ipsius honestatis decore.</p>
@@ -178,7 +174,7 @@
                     </div> <!-- single team card -->
 
                     <div class="af-single-team-card af-floatleft">
-                        <img src="assets/img/about/team-male.jpg" alt="John Doe">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/team-male.jpg" alt="John Doe">
                         <h4>Developer</h4>
                         <h3>John Doe</h3>
                         <p>Primum igitur, quid malum, sensu iudicari, sed ipsius honestatis decore.</p>
@@ -190,7 +186,7 @@
                     </div> <!-- single team card -->
 
                     <div class="af-single-team-card af-floatleft">
-                        <img src="assets/img/about/team-female2.jpg" alt="Sabrina">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/team-female2.jpg" alt="Sabrina">
                         <h4>Manager</h4>
                         <h3>Sabrina</h3>
                         <p>Primum igitur, quid malum, sensu iudicari, sed ipsius honestatis decore.</p>
@@ -214,11 +210,11 @@
             <div class="af-about-testimonial-content-wrapper clearfix">
                 <div class="af-about-testimonial-thumb af-floatleft">
                     <div class="af-about-testimonial-client-img">
-                        <img src="assets/img/testimonial-img.jpg" alt="client">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial-img.jpg" alt="client">
                     </div>
                     <div class="af-about-testimonial-brand-logo-wrapper clearfix">
                         <div class="af-about-testimonial-brand-logo">
-                            <img src="assets/img/testimoial-logo.png" alt="brand logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimoial-logo.png" alt="brand logo">
                         </div>
                         <div class="af-about-testimonial-brand-logo-content">
                             <h4>Coffee Shop</h4>
@@ -230,11 +226,11 @@
                 <div class="af-about-testimonial-content af-floatright">
                     <p>There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed.</p>
                     <div class="af-about-testimonial-rating-wrapper">
-                        <img src="assets/img/about/star.svg" alt="rating">
-                        <img src="assets/img/about/star.svg" alt="rating">
-                        <img src="assets/img/about/star.svg" alt="rating">
-                        <img src="assets/img/about/star.svg" alt="rating">
-                        <img src="assets/img/about/star-gray.svg" alt="rating">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/star.svg" alt="rating">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/star.svg" alt="rating">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/star.svg" alt="rating">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/star.svg" alt="rating">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/star-gray.svg" alt="rating">
                     </div>
                 </div> <!-- testimonial content-->
             </div>
@@ -244,76 +240,16 @@
     <section class="af-about-logo-section">
         <div class="af-container">
             <div class="af-about-logo-wrapper">
-                <img src="assets/img/logo1.png" alt="logo">
-                <img src="assets/img/logo2.png" alt="logo">
-                <img src="assets/img/logo3.png" alt="logo">
-                <img src="assets/img/logo4.png" alt="logo">
-                <img src="assets/img/logo5.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo1.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo2.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo3.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo4.png" alt="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo5.png" alt="logo">
             </div>
         </div>
     </section> <!-- logo section -->
 
-    <section class="af-footer-top-border"></section>
-    <section class="af-footer-section">
-        <div class="af-container">
-            <div class="af-footer-top clearfix">
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Benefits</a></li>
-                        <li><a href="#">Features</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>About us</h4>
-                    <ul>
-                        <li><a href="#">Our team</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-                <div class="af-footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="#">info@yourcompany.com</a></li>
-                        <li><a href="#">11-000-0000</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="af-footer-bottom clearfix">
-                <div class="af-footer-social-links">
-                    <a href="#" target="_blank"><img src="assets/img/facebook.svg" alt="facebook"></a>
-                    <a href="#" target="_blank"><img src="assets/img/twitter.svg" alt="twitter"></a>
-                    <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt="instagram"></a>
-                </div>
-                <div class="af-footer-copyright">
-                    <p>&copy; 2022 - All right reserved</p>
-                </div>
-            </div>
-        </div>
-    </section> <!-- footer section-->
-
-    <!-- Site scripts -->
-    <!--=============-->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- OWL carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Video modal -->
-    <script src="assets/js/modal-video.min.js"></script>
-    <!-- html5-boilerplate -->
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <!-- Site main js -->
-    <script src="assets/js/main.js"></script>
+    <?php get_footer(); ?>
 </body>
 
 </html>
