@@ -294,7 +294,7 @@
     }
     .af-icon-box {
         width: 100%;
-        margin-bottom: 50px;
+        margin: 25px 0px;
     }
     .af-iconbox-img {
     	margin-right: 15px;
@@ -684,7 +684,11 @@
         line-height: 50px;
     }
     .af-icon-box {
-        width: 43%;
+        width: 41%;
+        min-height: 350px;
+    }
+    .af-iconbox-content h3{
+        font-size: 23px;
     }
     .af-iconbox-img {
         margin-right: 20px;

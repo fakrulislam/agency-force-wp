@@ -7,10 +7,10 @@
  * @since agencyforcewp 1.0
  */
 
-/*
+/*****************************
  * Homepage options
  * panel, sections & fields
- */
+ ****************************/
 
 /* Panel */
 new \Kirki\Panel(
@@ -444,3 +444,393 @@ new \Kirki\Field\URL(
 		'priority' => 10,
 	]
 );
+
+/*****************************
+ * About page options
+ * panel, sections & fields
+ ****************************/
+ /* Panel */
+ new \Kirki\Panel(
+ 	'afwp_aboutpage_pan',
+ 	[
+ 		'priority'    => 10,
+ 		'title'       => esc_html__( 'About page', 'agencyforcewp' ),
+ 	]
+ );
+ /* Title section */
+ new \Kirki\Section(
+ 	'afwp_aboutpage_title_sec',
+ 	[
+ 		'title'       => esc_html__( 'Title Section', 'agencyforcewp' ),
+ 		'panel'       => 'afwp_aboutpage_pan',
+ 		'priority'    => 160,
+ 	]
+ );
+ new \Kirki\Field\Textarea(
+ 	[
+ 		'settings'    => 'afwp_aboutpage_title',
+ 		'label'       => esc_html__( 'Title', 'agencyforcewp' ),
+ 		'section'     => 'afwp_aboutpage_title_sec',
+ 		'default'     => '',
+ 	]
+ );
+
+ /* Video section */
+ new \Kirki\Section(
+   'afwp_aboutpage_video_sec',
+   [
+	   'title'       => esc_html__( 'Video Section', 'agencyforcewp' ),
+	   'panel'       => 'afwp_aboutpage_pan',
+	   'priority'    => 160,
+   ]
+ );
+ new \Kirki\Field\Textarea(
+   [
+	   'settings'    => 'afwp_aboutpage_video_heading',
+	   'label'       => esc_html__( 'Heading', 'agencyforcewp' ),
+	   'section'     => 'afwp_aboutpage_video_sec',
+	   'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Textarea(
+   [
+	  'settings'    => 'afwp_aboutpage_video_subheading',
+	  'label'       => esc_html__( 'Sub Heading', 'agencyforcewp' ),
+	  'section'     => 'afwp_aboutpage_video_sec',
+	  'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Textarea(
+   [
+	 'settings'    => 'afwp_aboutpage_video_desc',
+	 'label'       => esc_html__( 'Description', 'agencyforcewp' ),
+	 'section'     => 'afwp_aboutpage_video_sec',
+	 'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Image(
+ 	[
+ 		'settings'    => 'afwp_aboutpage_video_img',
+ 		'label'       => esc_html__( 'Upload Image', 'agencyforcewp' ),
+ 		'description' => esc_html__( 'recommened: svg or png / 785px X 510px', 'agencyforcewp' ),
+ 		'section'     => 'afwp_aboutpage_video_sec',
+ 		'default'     => '',
+ 	]
+ );
+ new \Kirki\Field\Text(
+   [
+	'settings'    => 'afwp_aboutpage_video_id',
+	'label'       => esc_html__( 'Video ID', 'agencyforcewp' ),
+	'description' => esc_html__( 'YouTube/Vimeo', 'agencyforcewp' ),
+	'section'     => 'afwp_aboutpage_video_sec',
+	'default'     => '',
+   ]
+ );
+ /* Iconbox section */
+ new \Kirki\Section(
+   'afwp_aboutpage_iconbox_sec',
+   [
+	   'title'       => esc_html__( 'Iconbox Section', 'agencyforcewp' ),
+	   'panel'       => 'afwp_aboutpage_pan',
+	   'priority'    => 160,
+   ]
+ );
+ new \Kirki\Field\Repeater(
+ 	[
+ 		'settings' => 'afwp_aboutpage_iconbox',
+ 		'label'    => esc_html__( 'Add Icon Box', 'agencyforcewp' ),
+ 		'section'  => 'afwp_aboutpage_iconbox_sec',
+ 		'priority' => 10,
+ 		'default'  => '',
+ 		'fields'   => [
+ 			'afwp_iconbox_icon'   	=> [
+ 				'type'        		=> 'image',
+ 				'description' 		=> esc_html__( 'Upload Icon', 'agencyforcewp' ),
+ 				'default'     		=> '',
+ 			],
+			'afwp_iconbox_title'   	=> [
+ 				'type'        		=> 'text',
+ 				'description' 		=> esc_html__( 'Title', 'agencyforcewp' ),
+ 				'default'     		=> '',
+ 			],
+			'afwp_iconbox_desc'   	=> [
+ 				'type'        		=> 'textarea',
+ 				'description' 		=> esc_html__( 'Description', 'agencyforcewp' ),
+ 				'default'     		=> '',
+ 			],
+ 		],
+ 	]
+ );
+
+ /* Image Carousel section */
+ new \Kirki\Section(
+   'afwp_aboutpage_carousel_sec',
+   [
+	  'title'       => esc_html__( 'Carousel Slider Section', 'agencyforcewp' ),
+	  'panel'       => 'afwp_aboutpage_pan',
+	  'priority'    => 160,
+   ]
+ );
+ new \Kirki\Field\Repeater(
+   [
+	   'settings' => 'afwp_aboutpage_carousel',
+	   'label'    => esc_html__( 'Add slide', 'agencyforcewp' ),
+	   'section'  => 'afwp_aboutpage_carousel_sec',
+	   'priority' => 10,
+	   'default'  => '',
+	   'fields'   => [
+		   'afwp_about_carousel_img'   		=> [
+			   'type'        				=> 'image',
+			   'label' 						=> esc_html__( 'Upload Icon', 'agencyforcewp' ),
+			   'description' 				=> esc_html__( 'Recommended: 650px X 410px', 'agencyforcewp' ),
+			   'default'     				=> '',
+		   ],
+		   'afwp_about_carousel_title'   	=> [
+			   'type'        				=> 'text',
+			   'description' 				=> esc_html__( 'Title', 'agencyforcewp' ),
+			   'default'     				=> '',
+		   ],
+		   'afwp_about_carousel_desc'   	=> [
+			   'type'        				=> 'textarea',
+			   'description' 				=> esc_html__( 'Description', 'agencyforcewp' ),
+			   'default'     				=> '',
+		   ],
+		   'afwp_about_carousel_btntext'   	=> [
+			   'type'        				=> 'text',
+			   'description' 				=> esc_html__( 'Button Text', 'agencyforcewp' ),
+			   'default'     				=> '',
+		   ],
+		   'afwp_about_carousel_btnurl'   	=> [
+			   'type'        				=> 'url',
+			   'description' 				=> esc_html__( 'Button Link', 'agencyforcewp' ),
+			   'default'     				=> '',
+		   ],
+		   'afwp_about_carousel_btntarget'  => [
+			   'type'        				=> 'checkbox',
+			   'description' 				=> esc_html__( 'Open button link in new tab', 'agencyforcewp' ),
+			   'default'     				=> false,
+		   ],
+	   ],
+   ]
+ );
+
+ /* Call to action section */
+ new \Kirki\Section(
+   'afwp_aboutpage_calltoaction_sec',
+   [
+	 'title'       => esc_html__( 'Call To Action Section', 'agencyforcewp' ),
+	 'panel'       => 'afwp_aboutpage_pan',
+	 'priority'    => 160,
+   ]
+ );
+ new \Kirki\Field\Textarea(
+   [
+	   'settings'    => 'afwp_aboutpage_calltoaction_text',
+	   'label'       => esc_html__( 'Callout Text', 'agencyforcewp' ),
+	   'section'     => 'afwp_aboutpage_calltoaction_sec',
+	   'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Text(
+   [
+	  'settings'    => 'afwp_aboutpage_calltoaction_btntext',
+	  'label'       => esc_html__( 'Button Text', 'agencyforcewp' ),
+	  'section'     => 'afwp_aboutpage_calltoaction_sec',
+	  'default'     => '',
+   ]
+ );
+ new \Kirki\Field\URL(
+   [
+	 'settings'    => 'afwp_aboutpage_calltoaction_btnurl',
+	 'label'       => esc_html__( 'Button Link', 'agencyforcewp' ),
+	 'section'     => 'afwp_aboutpage_calltoaction_sec',
+	 'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Checkbox(
+   [
+	'settings'    => 'afwp_aboutpage_calltoaction_btntarget',
+	'label'       => esc_html__( 'Open button link in new tab', 'agencyforcewp' ),
+	'section'     => 'afwp_aboutpage_calltoaction_sec',
+	'default'     => false,
+   ]
+ );
+
+ /* Team section */
+ new \Kirki\Section(
+   'afwp_aboutpage_team_sec',
+   [
+	'title'       => esc_html__( 'Team Section', 'agencyforcewp' ),
+	'panel'       => 'afwp_aboutpage_pan',
+	'priority'    => 160,
+   ]
+ );
+ new \Kirki\Field\Text(
+   [
+	'settings'    => 'afwp_aboutpage_team_sec_heading',
+	'label'       => esc_html__( 'Heading', 'agencyforcewp' ),
+	'section'     => 'afwp_aboutpage_team_sec',
+	'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Textarea(
+   [
+	  'settings'    => 'afwp_aboutpage_team_sec_subheading',
+	  'label'       => esc_html__( 'Sub Heading', 'agencyforcewp' ),
+	  'section'     => 'afwp_aboutpage_team_sec',
+	  'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Repeater(
+   [
+	  'settings' => 'afwp_aboutpage_team',
+	  'label'    => esc_html__( 'Add Team Member', 'agencyforcewp' ),
+	  'section'  => 'afwp_aboutpage_team_sec',
+	  'priority' => 10,
+	  'default'  => '',
+	  'fields'   => [
+		  'afwp_about_team_img'   			=> [
+			  'type'        				=> 'image',
+			  'label' 						=> esc_html__( 'Team Image', 'agencyforcewp' ),
+			  'description' 				=> esc_html__( 'Recommended: 160px X 160px', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+		  'afwp_about_team_designation'   	=> [
+			  'type'        				=> 'text',
+			  'description' 				=> esc_html__( 'Designation', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+		  'afwp_about_team_name'   			=> [
+			  'type'        				=> 'text',
+			  'description' 				=> esc_html__( 'Name', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+		  'afwp_about_team_desc'   			=> [
+			  'type'        				=> 'textarea',
+			  'description' 				=> esc_html__( 'Description', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+		  'afwp_about_team_fb'   			=> [
+			  'type'        				=> 'url',
+			  'description' 				=> esc_html__( 'Facebook', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+		  'afwp_about_team_twitter'  		=> [
+			  'type'        				=> 'url',
+			  'description' 				=> esc_html__( 'Twitter', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+		  'afwp_about_team_instagram'  		=> [
+			  'type'        				=> 'url',
+			  'description' 				=> esc_html__( 'Instagram', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+		  'afwp_about_team_linkedin'  		=> [
+			  'type'        				=> 'url',
+			  'description' 				=> esc_html__( 'LinkedIn', 'agencyforcewp' ),
+			  'default'     				=> '',
+		  ],
+	  ],
+   ]
+ );
+
+ /* Testimonial section */
+ new \Kirki\Section(
+   'afwp_aboutpage_testimonial_sec',
+   [
+   'title'       => esc_html__( 'Testimonial Section', 'agencyforcewp' ),
+   'panel'       => 'afwp_aboutpage_pan',
+   'priority'    => 160,
+   ]
+ );
+ new \Kirki\Field\Text(
+   [
+   'settings'    => 'afwp_aboutpage_testimonial_sec_heading',
+   'label'       => esc_html__( 'Heading', 'agencyforcewp' ),
+   'section'     => 'afwp_aboutpage_testimonial_sec',
+   'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Textarea(
+   [
+	 'settings'    => 'afwp_aboutpage_testimonial_sec_subheading',
+	 'label'       => esc_html__( 'Sub Heading', 'agencyforcewp' ),
+	 'section'     => 'afwp_aboutpage_testimonial_sec',
+	 'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Image(
+   [
+	'settings'    => 'afwp_aboutpage_testimonial_image',
+	'label'       => esc_html__( 'Testimonial Image', 'agencyforcewp' ),
+	'section'     => 'afwp_aboutpage_testimonial_sec',
+	'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Image(
+   [
+	'settings'    => 'afwp_aboutpage_testimonial_box_image',
+	'label'       => esc_html__( 'Testimonial Box Image', 'agencyforcewp' ),
+	'section'     => 'afwp_aboutpage_testimonial_sec',
+	'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Text(
+   [
+   'settings'    => 'afwp_aboutpage_testimonial_box_title',
+   'label'       => esc_html__( 'Box Title', 'agencyforcewp' ),
+   'section'     => 'afwp_aboutpage_testimonial_sec',
+   'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Text(
+   [
+   'settings'    => 'afwp_aboutpage_testimonial_box_subtitle',
+   'label'       => esc_html__( 'Box Sub Title', 'agencyforcewp' ),
+   'section'     => 'afwp_aboutpage_testimonial_sec',
+   'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Textarea(
+   [
+   'settings'    => 'afwp_aboutpage_testimonial_text',
+   'label'       => esc_html__( 'Testimonial Text', 'agencyforcewp' ),
+   'section'     => 'afwp_aboutpage_testimonial_sec',
+   'default'     => '',
+   ]
+ );
+ new \Kirki\Field\Checkbox(
+   [
+   'settings'    => 'afwp_aboutpage_testimonial_rating',
+   'label'       => esc_html__( 'Disable Rating', 'agencyforcewp' ),
+   'section'     => 'afwp_aboutpage_testimonial_sec',
+   'default'     => false,
+   ]
+ );
+
+ /* Logo section */
+ new \Kirki\Section(
+   'afwp_aboutpage_logo_sec',
+   [
+   'title'       => esc_html__( 'Logo Section', 'agencyforcewp' ),
+   'panel'       => 'afwp_aboutpage_pan',
+   'priority'    => 160,
+   ]
+ );
+ new \Kirki\Field\Repeater(
+   [
+	 'settings' => 'afwp_aboutpage_logo',
+	 'label'    => esc_html__( 'Add Logos', 'agencyforcewp' ),
+	 'section'  => 'afwp_aboutpage_logo_sec',
+	 'priority' => 10,
+	 'default'  => '',
+	 'fields'   => [
+		 'afwp_about_logo_img'   		=> [
+			 'type'        				=> 'image',
+			 'label' 					=> esc_html__( 'Upload Logo', 'agencyforcewp' ),
+			 'description' 				=> esc_html__( 'Recommended: 130px X 140px', 'agencyforcewp' ),
+			 'default'     				=> '',
+		 ],
+	 ],
+   ]
+ );
