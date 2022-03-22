@@ -56,8 +56,8 @@
  	 * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
  	 */
  	add_theme_support( 'post-thumbnails' );
- 	set_post_thumbnail_size( 1200, 520 ); // default size
- 	add_image_size( 'agencyforcewp-post-thumb', 1200, 520 ); // post-thumb
+ 	set_post_thumbnail_size( 1060, 560 ); // default size
+ 	add_image_size( 'agencyforcewp-post-thumb', 1060, 560 ); // post-thumb
 
  	/*
  	 * Let WordPress manage the document title.
@@ -83,3 +83,29 @@
  }
 endif; // agencyforcewp setup
 add_action( 'after_setup_theme', 'agencyforcewp_setup' );
+
+/*
+ * TGM Required Plugins Activation
+ * Sends a push message "to install required plugins" after theme activation
+ */
+require_once get_template_directory() . '/assets/inc/tgm/required-plugins.php';
+
+/*
+ * Register Customizer Options
+ * for Kirki Framework
+ */
+if ( class_exists('Kirki') ) {
+    require_once get_template_directory() . '/assets/inc/customizer.php';
+}
+
+/*
+ * Register site scripts
+ * css, js, google fonts
+ */
+require_once get_template_directory() . '/assets/inc/enqueqe.php';
+
+/*
+ * Dynamic CSS
+ * Overrides main style.css via theme options
+ */
+require_once get_template_directory() . '/assets/inc/override-css.php';

@@ -589,8 +589,8 @@
         padding: 0% 20%;
     }
     .af-service-box-item {
-        width: 22%;
-        min-height: 550px;
+        width: 21%;
+        min-height: 800px;
         margin-bottom: 25px;
     }
     .af-service-box-item li img {
@@ -813,9 +813,6 @@
     .af-service-page-calltoaciton-section .af-about-calltoaction-bglayer {
         background-size: cover;
         border-radius: 5px;
-    }
-    .af-service-box-item {
-        width: 21%;
     }
     .af-service-icon-box-item {
         width: 25%;

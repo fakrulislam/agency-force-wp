@@ -232,7 +232,7 @@ iframe{
     line-height: 18.77px;
     letter-spacing: 1px;
     text-align: center;
-    padding: 9px 30px;
+    padding: 9px 20px;
     border: 1px solid #ffffff;
     color: #ffffff;
     display: block;
@@ -397,7 +397,7 @@ iframe{
 }
 .af-logo-showcase {
     background: #fff;
-    padding: 50px 80px;
+    padding: 30px 80px;
     text-align: center;
     border-radius: 5px;
     -webkit-box-shadow: 0px 15px 30px -5px rgba(227,227,227,1);
@@ -407,7 +407,7 @@ iframe{
 .af-logo-showcase img {
     width: 100px;
     height: auto;
-    margin: 0px 45px;
+    margin: 20px;
 }
 /*
  * Home service section styles
@@ -437,13 +437,10 @@ iframe{
 .af-service-boxes {
     margin-top: 70px;
 }
-.af-service-box-item:first-child {
-    margin-left: 0px
-}
 .af-service-box-item {
-    width: 26%;
+    width: 25%;
     float: left;
-    margin-left: 20px;
+    margin: 10px;
     background: #ffffff;
     padding: 30px;
     border-radius: 5px;
@@ -474,24 +471,6 @@ iframe{
 }
 .af-service-box-item li p {
     margin: 0;
-}
-.service-box-item-bg1 {
-    background-image: url(assets/img/service-box-1-bg.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 80px 80px;
-}
-.service-box-item-bg2 {
-    background-image: url(assets/img/service-box-2-bg.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 80px 52px;
-}
-.service-box-item-bg3 {
-    background-image: url(assets/img/service-box-3-bg.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 80px 65px;
 }
 
 /*
@@ -754,7 +733,8 @@ iframe{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
-.af-latest-post-item h3 {
+.af-latest-post-item h3,
+.af-latest-post-item h3 a {
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
@@ -1278,7 +1258,6 @@ iframe{
 }
  .af-post-featured-thumb {
      text-align: center;
-     height: 520px;
  }
  .af-post-featured-thumb img {
      border-radius: 5px;

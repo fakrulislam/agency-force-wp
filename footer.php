@@ -47,16 +47,4 @@
     </div>
 </section> <!-- footer section-->
 
-<!-- Site scripts -->
-<!--=============-->
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- OWL carousel -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
-<!-- Video modal -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/modal-video.min.js"></script>
-<!-- html5-boilerplate -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr-3.11.2.min.js"></script>
-<!-- Site main js -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
 <?php wp_footer();?>
