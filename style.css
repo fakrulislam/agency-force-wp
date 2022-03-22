@@ -509,7 +509,8 @@ iframe{
     color: #666666;
 }
 .af-feature-top-content a,
-.af-latest-posts-callout a {
+.af-latest-posts-callout a,
+.af-project-slide-content a {
     display: inline-block;
     background: #E4F2FE;
     padding: 16px 41px;
@@ -812,21 +813,18 @@ iframe{
     margin: 100px 0px;
     border-radius: 5px;
 }
-.af-icon-box-content-wrapper .af-icon-box:first-child {
-    padding-right: 35px;
-}
-.af-icon-box-content-wrapper .af-icon-box:last-child {
-    padding-left: 35px;
-}
 .af-icon-box {
-    width: 46%;
+    width: 45%;
+    margin: 25px;
 }
 .af-iconbox-img {
     float: left;
     margin-right: 30px;
     width: 8%;
 }
-.af-iconbox-img img{}
+.af-iconbox-img img{
+    width: 100%;
+}
 .af-iconbox-content {
     float: right;
     width: 85%;

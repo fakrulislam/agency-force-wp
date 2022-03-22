@@ -317,7 +317,7 @@ get_header(); ?>
                         $posts = new WP_Query( $args );
                         if ( $posts->have_posts() ) : ?>
                         	<?php while( $posts->have_posts() ) : $posts->the_post() ?>
-                                <div class="af-latest-post-item">
+                                <div id="post-<?php the_ID(); ?>" <?php post_class('af-latest-post-item'); ?>>
                                     <?php if ( has_post_thumbnail() ) : ?>
                             			<a href="<?php the_permalink();?>">
                             				<?php the_post_thumbnail('agencyforcewp-post-thumb', array('alt' => esc_attr( get_the_title() ) )); ?>
