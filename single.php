@@ -50,7 +50,7 @@
     <section class="af-blog-single-content-section clearfix">
         <div class="af-container">
             <div class="af-post-featured-thumb">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="post thumbnail">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog-thumb.jpg" alt="post thumbnail">
             </div>
             <div class="af-post-meta-wrapper">
                 <h1>E-Commerce Design Trends That Make Online Shopping Better.</h1>

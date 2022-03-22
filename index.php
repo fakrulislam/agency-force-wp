@@ -61,7 +61,7 @@
                 <div class="af-left-column af-floatleft">
                     <div class="af-blog-featured-content">
                         <div class="af-blog-post-item">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog-thumb.jpg" alt="blog thumb">
                             <div class="af-post-item-content">
                                 <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                                 <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="af-blog-posts">
                         <div class="af-blog-post-item">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog-thumb.jpg" alt="blog thumb">
                             <div class="af-post-item-content">
                                 <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                                 <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -79,7 +79,7 @@
                             </div>
                         </div> <!-- blog post item -->
                         <div class="af-blog-post-item">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog-thumb.jpg" alt="blog thumb">
                             <div class="af-post-item-content">
                                 <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                                 <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="af-right-column af-floatright">
                     <div class="af-blog-post-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog-thumb.jpg" alt="blog thumb">
                         <div class="af-post-item-content">
                             <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                             <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
@@ -98,7 +98,7 @@
                         </div>
                     </div> <!-- blog post item -->
                     <div class="af-blog-post-item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post-single-thumb.jpg" alt="blog thumb">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog-thumb.jpg" alt="blog thumb">
                         <div class="af-post-item-content">
                             <h1><a href="#">E-Commerce Design Trends That Make Online Shopping Better.</a></h1>
                             <p>Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex ea voluptate velit esse, quam ostendis sed ipsius honestatis decore laudandis, id ne interiret at magnum periculum adiit in oculis quidem se texit, ne interiret at vero eos censes tantas res gessisse.</p>
