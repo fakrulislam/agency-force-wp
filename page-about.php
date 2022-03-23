@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<body>
+<body <?php body_class(); ?> >
 
     <!-- Header: Transparent-->
     <?php get_template_part('assets/parts/header-transparent'); ?>

@@ -834,3 +834,132 @@ new \Kirki\Field\URL(
 	 ],
    ]
  );
+
+ /*****************************
+  * Service page options
+  * panel, sections & fields
+  ****************************/
+  /* Panel */
+  new \Kirki\Panel(
+  	'afwp_servicepage_pan',
+  	[
+  		'priority'    => 10,
+  		'title'       => esc_html__( 'Service page', 'agencyforcewp' ),
+  	]
+  );
+  /* Title section */
+  new \Kirki\Section(
+  	'afwp_servicepage_title_sec',
+  	[
+  		'title'       => esc_html__( 'Title Section', 'agencyforcewp' ),
+  		'panel'       => 'afwp_servicepage_pan',
+  		'priority'    => 160,
+  	]
+  );
+  new \Kirki\Field\Textarea(
+   [
+	   'settings'    => 'afwp_servicepage_title',
+	   'label'       => esc_html__( 'Title', 'agencyforcewp' ),
+	   'section'     => 'afwp_servicepage_title_sec',
+	   'default'     => '',
+   ]
+  );
+  /* Services section */
+  new \Kirki\Section(
+	  'afwp_servicepage_servicebox_sec',
+	  [
+		  'title'       => esc_html__( 'Services Section', 'agencyforcewp' ),
+		  'panel'       => 'afwp_servicepage_pan',
+		  'priority'    => 160,
+	  ]
+  );
+  new \Kirki\Field\Custom(
+   [
+	 'settings'    	=> 'afwp_servicepage_servicebox',
+	 'description' 	=> esc_html__( 'Please go back to root panels (2 step back): Homepage > Services Section > Add services.', 'agencyforcewp' ),
+	 'section'     	=> 'afwp_servicepage_servicebox_sec',
+	 'default'     	=> '',
+   ]
+  );
+
+  /* iconbox section */
+  new \Kirki\Section(
+	  'afwp_servicepage_iconbox_sec',
+	  [
+		  'title'       => esc_html__( 'Icon Box Section', 'agencyforcewp' ),
+		  'panel'       => 'afwp_servicepage_pan',
+		  'priority'    => 160,
+	  ]
+  );
+  new \Kirki\Field\Repeater(
+    [
+ 	  'settings' => 'afwp_servicepage_iconbox',
+ 	  'label'    => esc_html__( 'Add Icon Box', 'agencyforcewp' ),
+ 	  'section'  => 'afwp_servicepage_iconbox_sec',
+ 	  'priority' => 10,
+ 	  'default'  => '',
+ 	  'fields'   => [
+ 		  'afwp_servicepage_iconbox_icon'   => [
+ 			  'type'        				=> 'image',
+ 			  'label' 						=> esc_html__( 'Upload Icon', 'agencyforcewp' ),
+ 			  'description' 				=> esc_html__( 'Recommended: svg/png', 'agencyforcewp' ),
+ 			  'default'     				=> '',
+ 		  ],
+ 		  'afwp_servicepage_iconbox_title'  => [
+ 			  'type'        				=> 'text',
+ 			  'description' 				=> esc_html__( 'Title', 'agencyforcewp' ),
+ 			  'default'     				=> '',
+ 		  ],
+ 		  'afwp_servicepage_iconbox_desc'   => [
+ 			  'type'        				=> 'textarea',
+ 			  'description' 				=> esc_html__( 'Description', 'agencyforcewp' ),
+ 			  'default'     				=> '',
+ 		  ],
+ 	  ],
+    ]
+  );
+
+  /*****************
+   * Footer Panel
+   ****************/
+  new \Kirki\Panel(
+  	'afwp_footer_pan',
+  	[
+  		'priority'    => 10,
+  		'title'       => esc_html__( 'Footer', 'agencyforcewp' ),
+  	]
+  );
+  new \Kirki\Section(
+	  'afwp_footer_callout_sec',
+	  [
+		  'title'       => esc_html__( 'Footer Callout Section', 'agencyforcewp' ),
+		  'panel'       => 'afwp_footer_pan',
+		  'priority'    => 160,
+	  ]
+  );
+  new \Kirki\Field\Textarea(
+  	[
+  		'settings'    => 'afwp_footer_callout_text',
+  		'label'       => esc_html__( 'Text', 'agencyforcewp' ),
+  		'section'     => 'afwp_footer_callout_sec',
+  		'default'     => '',
+  	]
+  );
+  new \Kirki\Field\Text(
+  	[
+  		'settings' => 'afwp_footer_callout_btntext',
+  		'label'    => esc_html__( 'Button Text', 'agencyforcewp' ),
+  		'section'  => 'afwp_footer_callout_sec',
+  		'default'  => '',
+  		'priority' => 10,
+  	]
+  );
+  new \Kirki\Field\URL(
+  	[
+  		'settings' => 'afwp_footer_callout_btnurl',
+  		'label'    => esc_html__( 'URL', 'agencyforcewp' ),
+  		'section'  => 'afwp_footer_callout_sec',
+  		'default'  => '',
+  		'priority' => 10,
+  	]
+  );
