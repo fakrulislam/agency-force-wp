@@ -1,14 +1,17 @@
 <?php
-/**
-* Template Name: Contact page
-* Desc: Outputs contact page contents
-*
-* @version 1.0
-* @since agencyforcewp 1.0
-*/
-?>
+/*************
+ * Template Name: Contact page
+ * Desc: Outputs about page contents
+ *
+ * @package  		 agencyforcewp
+ * @file     		 page-contact.php
+ * @version          1.0
+ * @since            agencyforcewp 1.0
+ * @author   		 MD FAKRUL ISLAM
+ * @Author URL 	     https://fakrulislam.me
+ ***************/
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <body>
 

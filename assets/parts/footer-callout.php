@@ -13,7 +13,7 @@ $af_footer_calltoaction_text        = esc_html( get_theme_mod('afwp_footer_callo
 $af_footer_calltoaction_btntext     = esc_html( get_theme_mod('afwp_footer_callout_btntext') );
 $af_footer_calltoaction_btnurl      = esc_url( get_theme_mod('afwp_footer_callout_btnurl') );
 ?>
-<section class="af-about-calltoaction-section af-service-page-calltoaciton-section">
+<section class="<?php if ( is_page_template('page-service.php') ): echo 'af-about-calltoaction-section af-service-page-calltoaciton-section'; else: echo 'af-about-calltoaction-section af-service-page-calltoaciton-section af-blogpage-footer-callout'; endif; ?>">
     <div class="af-container">
         <div class="af-about-calltoaction-bglayer">
             <div class="af-calltoaction-wrapper clearfix">

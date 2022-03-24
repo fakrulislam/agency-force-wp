@@ -420,7 +420,7 @@
     .af-blog-posts .af-blog-post-item {
         width: 100%;
         float: none;
-        margin-right: 0px;
+        margin: 0px 0px 30px 0px;
     }
     .af-right-column {
         width: 100%;
@@ -521,6 +521,12 @@
     .af-contact-form-wrapper form .af-fname-field,
     .af-contact-form-wrapper form .af-lname-field {
         width: 75%;
+    }
+
+    .af-blog-post-wrapper > .af-blog-post-item {
+        width: 100%;
+        min-height: inherit;
+        margin: 0px 0px 30px 0px;
     }
 
 }
@@ -834,7 +840,8 @@
         width: 30%;
     }
     .af-blog-posts .af-blog-post-item {
-        width: 46.5%;
+        width: 44.5%;
+        min-height: 87px;
     }
     .af-blogpage-bg-layer h1 {
         font-size: 44px;
@@ -922,6 +929,10 @@
     .af-contact-form-wrapper form .af-fname-field,
     .af-contact-form-wrapper form .af-lname-field {
         width: 65%;
+    }
+    .af-blog-post-wrapper > .af-blog-post-item {
+        width: 46.4%;
+        min-height: 650px;
     }
 }
 

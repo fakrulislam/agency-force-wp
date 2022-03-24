@@ -17,7 +17,7 @@ new \Kirki\Panel(
 	'afwp_homepage_pan',
 	[
 		'priority'    => 10,
-		'title'       => esc_html__( 'Homepage', 'agencyforcewp' ),
+		'title'       => esc_html__( 'Home Page', 'agencyforcewp' ),
 	]
 );
 /* header section */
@@ -454,7 +454,7 @@ new \Kirki\Field\URL(
  	'afwp_aboutpage_pan',
  	[
  		'priority'    => 10,
- 		'title'       => esc_html__( 'About page', 'agencyforcewp' ),
+ 		'title'       => esc_html__( 'About Page', 'agencyforcewp' ),
  	]
  );
  /* Title section */
@@ -844,7 +844,7 @@ new \Kirki\Field\URL(
   	'afwp_servicepage_pan',
   	[
   		'priority'    => 10,
-  		'title'       => esc_html__( 'Service page', 'agencyforcewp' ),
+  		'title'       => esc_html__( 'Service Page', 'agencyforcewp' ),
   	]
   );
   /* Title section */
@@ -918,6 +918,64 @@ new \Kirki\Field\URL(
  	  ],
     ]
   );
+
+  /*********************
+   * Blog page options
+   *********************/
+  new \Kirki\Panel(
+	  'afwp_blog_pan',
+	  [
+		  'priority'    => 10,
+		  'title'       => esc_html__( 'Blog Page', 'agencyforcewp' ),
+	  ]
+  );
+  new \Kirki\Section(
+	  'afwp_blog_sec',
+	  [
+		  'title'       => esc_html__( 'Blog Page Settings', 'agencyforcewp' ),
+		  'panel'       => 'afwp_blog_pan',
+		  'priority'    => 160,
+	  ]
+  );
+   new \Kirki\Field\Text(
+  	[
+  		'settings' => 'afwp_blog_title',
+  		'label'    => esc_html__( 'Title', 'agencyforcewp' ),
+  		'section'  => 'afwp_blog_sec',
+  		'default'  => '',
+  		'priority' => 10,
+  	]
+  );
+  new \Kirki\Field\Text(
+   [
+	   'settings' 		=> 'afwp_blog_featured_cat',
+	   'label'    		=> esc_html__( 'Category ID: Featured Post', 'agencyforcewp' ),
+	   'description' 	=> esc_html__( 'Numeric only, default: last posts', 'agencyforcewp' ),
+	   'section'  		=> 'afwp_blog_sec',
+	   'default'  		=> '',
+	   'priority' 		=> 10,
+   ]
+ );
+ new \Kirki\Field\Text(
+  [
+	 'settings' 	=> 'afwp_blog_posts_cat',
+	 'label'    	=> esc_html__( 'Category ID: Posts Area', 'agencyforcewp' ),
+	 'description' 	=> esc_html__( 'Numeric only, default: last posts', 'agencyforcewp' ),
+	 'section'  	=> 'afwp_blog_sec',
+	 'default'  	=> '',
+	 'priority' 	=> 10,
+  ]
+);
+new \Kirki\Field\Text(
+ [
+	'settings' 		=> 'afwp_blog_sidebar_posts_cat',
+	'label'    		=> esc_html__( 'Category ID: Sidebar Posts', 'agencyforcewp' ),
+	'description' 	=> esc_html__( 'Numeric only, default: last posts', 'agencyforcewp' ),
+	'section'  		=> 'afwp_blog_sec',
+	'default'  		=> '',
+	'priority' 		=> 10,
+ ]
+);
 
   /*****************
    * Footer Panel

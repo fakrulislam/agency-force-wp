@@ -4,7 +4,7 @@
  * Desc: Outputs service page contents
  *
  * @package  		 agencyforcewp
- * @file     		 service.php
+ * @file     		 page-service.php
  * @version          1.0
  * @since            agencyforcewp 1.0
  * @author   		 MD FAKRUL ISLAM
