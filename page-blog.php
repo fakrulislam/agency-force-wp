@@ -49,7 +49,7 @@ get_header(); ?>
 
                         if ( $featured_post->have_posts() ) :
                             while ( $featured_post->have_posts() ) : $featured_post->the_post(); ?>
-                                <div class="af-blog-post-item">
+                                <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                                     <?php if ( has_post_thumbnail() ) : ?>
                             			<?php the_post_thumbnail('agencyforcewp-post-thumb', array('alt' => esc_attr( get_the_title() ) )); ?>
                                 	<?php endif; ?>
@@ -67,7 +67,7 @@ get_header(); ?>
                                 </div> <!-- blog post item -->
                             <?php endwhile;?>
                         <?php else: ?>
-                            <div class="af-blog-post-item">
+                            <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                                 <div class="af-post-item-content">
                                     <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'agencyforcewp' );?></p>
                                 </div>
@@ -91,7 +91,7 @@ get_header(); ?>
 
                         if ( $blog_post->have_posts() ) :
                             while ( $blog_post->have_posts() ) : $blog_post->the_post(); ?>
-                                <div class="af-blog-post-item">
+                                <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                                     <?php if ( has_post_thumbnail() ) : ?>
                             			<?php the_post_thumbnail('agencyforcewp-post-thumb', array('alt' => esc_attr( get_the_title() ) )); ?>
                                 	<?php endif; ?>
@@ -109,7 +109,7 @@ get_header(); ?>
                                 </div> <!-- blog post item -->
                             <?php endwhile;?>
                         <?php else: ?>
-                            <div class="af-blog-post-item">
+                            <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                                 <div class="af-post-item-content">
                                     <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'agencyforcewp' );?></p>
                                 </div>
@@ -132,7 +132,7 @@ get_header(); ?>
 
                     if ( $blog_sidebar_post->have_posts() ) :
                         while ( $blog_sidebar_post->have_posts() ) : $blog_sidebar_post->the_post(); ?>
-                            <div class="af-blog-post-item">
+                            <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                                 <?php if ( has_post_thumbnail() ) : ?>
                                     <?php the_post_thumbnail('agencyforcewp-post-thumb', array('alt' => esc_attr( get_the_title() ) )); ?>
                                 <?php endif; ?>
@@ -149,7 +149,7 @@ get_header(); ?>
                             </div> <!-- blog post item -->
                         <?php endwhile; ?>
                     <?php else: ?>
-                        <div class="af-blog-post-item">
+                        <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                             <div class="af-post-item-content">
                                 <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'agencyforcewp' );?></p>
                             </div>

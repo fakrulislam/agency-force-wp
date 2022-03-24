@@ -29,9 +29,8 @@ get_header(); ?>
     <section class="af-blog-post-section">
         <div class="af-container">
             <div class="af-blog-post-wrapper clearfix">
-
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <div class="af-blog-post-item">
+                    <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                         <?php if ( has_post_thumbnail() ) : ?>
                             <?php the_post_thumbnail('agencyforcewp-post-thumb', array('alt' => esc_attr( get_the_title() ) )); ?>
                         <?php endif; ?>
@@ -49,7 +48,7 @@ get_header(); ?>
                         </div>
                     </div> <!-- blog post item -->
                 <?php endwhile; else : ?>
-                    <div class="af-blog-post-item">
+                    <div id="post-<?php the_ID(); ?>" <?php post_class('af-blog-post-item'); ?>>
                         <div class="af-post-item-content">
                             <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'agencyforcewp' ); ?></p>
                         </div>

@@ -977,6 +977,83 @@ new \Kirki\Field\Text(
  ]
 );
 
+/*********************
+ * Contact page options
+ *********************/
+new \Kirki\Panel(
+	'afwp_contact_page_pan',
+	[
+		'priority'    => 10,
+		'title'       => esc_html__( 'Contact Page', 'agencyforcewp' ),
+	]
+);
+new \Kirki\Section(
+	'afwp_contact_page_sec',
+	[
+		'title'       => esc_html__( 'Setup Contents', 'agencyforcewp' ),
+		'panel'       => 'afwp_contact_page_pan',
+		'priority'    => 160,
+	]
+);
+new \Kirki\Field\Image(
+  [
+   'settings'    => 'afwp_contact_page_img',
+   'label'       => esc_html__( 'Hero Image', 'agencyforcewp' ),
+   'description' => esc_html__( 'Recommended: 1600px X 650px', 'agencyforcewp' ),
+   'section'     => 'afwp_contact_page_sec',
+   'default'     => '',
+  ]
+);
+new \Kirki\Field\Text(
+  [
+  'settings'    => 'afwp_contact_form_title',
+  'label'       => esc_html__( 'Form Title', 'agencyforcewp' ),
+  'section'     => 'afwp_contact_page_sec',
+  'default'     => '',
+  ]
+);
+new \Kirki\Field\Textarea(
+  [
+  'settings'    => 'afwp_contact_form_desc',
+  'label'       => esc_html__( 'Form Description', 'agencyforcewp' ),
+  'section'     => 'afwp_contact_page_sec',
+  'default'     => '',
+  ]
+);
+new \Kirki\Field\Text(
+  [
+  'settings'    => 'afwp_contact_form_shortcode',
+  'label'       => esc_html__( 'Contact form 7 shortcode', 'agencyforcewp' ),
+  'description' => esc_html__( 'Case Sensitive', 'agencyforcewp' ),
+  'section'     => 'afwp_contact_page_sec',
+  'default'     => '',
+  ]
+);
+new \Kirki\Field\Textarea(
+  [
+  'settings'    => 'afwp_contact_page_address',
+  'label'       => esc_html__( 'Address', 'agencyforcewp' ),
+  'section'     => 'afwp_contact_page_sec',
+  'default'     => '',
+  ]
+);
+new \Kirki\Field\Textarea(
+  [
+  'settings'    => 'afwp_contact_page_phone',
+  'label'       => esc_html__( 'Phone', 'agencyforcewp' ),
+  'section'     => 'afwp_contact_page_sec',
+  'default'     => '',
+  ]
+);
+new \Kirki\Field\Text(
+  [
+  'settings'    => 'afwp_contact_page_email',
+  'label'       => esc_html__( 'Email', 'agencyforcewp' ),
+  'section'     => 'afwp_contact_page_sec',
+  'default'     => '',
+  ]
+);
+
   /*****************
    * Footer Panel
    ****************/
