@@ -119,11 +119,13 @@ ul{
 
 a{
     text-decoration: none;
+    color: #4833DE;
 }
 
 a:hover,
 a:focus{
     text-decoration: none;
+    color: #4833DE;
 }
 
 
@@ -1303,6 +1305,7 @@ iframe{
 }
 .af-author-name {
     float: right;
+    width: 70%;
 }
 .af-author-name h4 {
     margin: 0px;
@@ -1463,6 +1466,238 @@ iframe{
     padding: 20px 0px;
 }
 
+/********************************/
+/*comments section*/
+/********************************/
+.af-single-post-comment-section{}
+.af-single-post-comment-section .comments-area {
+	display: inline;
+	float: left;
+	margin: 20px 0 0;
+	padding: 35px 0 15px 0px;
+	width: 100%;
+}
+
+.af-single-post-comment-section .comment_list_container em{
+	margin:10px 0px 10px 0px;
+	color:#666666;
+}
+
+.af-single-post-comment-section .comments-title {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 25px;
+	margin-top: 0;
+	color: #ffffff;
+}
+
+
+.af-single-post-comment-section .comments{
+	float: left;
+	display: inline;
+	width: 100%;
+}
+
+
+.af-single-post-comment-section .commentlist li {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	margin-bottom: 10px;
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+.af-single-post-comment-section .commentlist .media-left{
+    float: left;
+}
+
+.af-single-post-comment-section .commentlist .media-left img {
+	border-radius: 50%;
+	display: block;
+	height: 60px;
+	margin-right: 10px;
+	width: 60px;
+}
+
+
+.af-single-post-comment-section .comments-date {
+	color: #888;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+
+.af-single-post-comment-section .reply-btn a{
+	color: #333333;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 16px;
+	padding: 8px 12px;
+	position: absolute;
+	right: 10px;
+	text-transform: uppercase;
+	top: 10px;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+.af-single-post-comment-section .reply-btn a:before{
+	content: '\f112';
+	font-family: FontAwesome;
+	left: 0;
+	margin-right: 3px;
+}
+
+
+.af-single-post-comment-section .reply-btn a:hover{
+	text-decoration: none;
+	outline: none;
+}
+
+
+.af-single-post-comment-section .children{
+	margin-left: 50px;
+}
+
+
+.af-single-post-comment-section .author-comments .author-name{
+	color: #fff;
+}
+
+
+.af-single-post-comment-section .author-comments .comments-date{
+	color: #222;
+}
+
+
+.af-single-post-comment-section .author-comments p{
+	color: #fff;
+}
+
+
+.af-single-post-comment-section .author-comments .reply-btn a,
+.af-single-post-comment-section .author-comments .reply-btn a:hover{
+	color: #222;
+}
+
+
+.af-single-post-comment-section .comments-pagination-area{
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.af-single-post-comment-section .comments-pagination-area a,
+.af-single-post-comment-section .comments-pagination-area span.current {
+	background: #fff none repeat scroll 0 0;
+    color: #333333;
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 10px;
+    text-align: center;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.af-single-post-comment-section .comments-pagination-area span.current{
+	color:#ffffff;
+}
+
+.af-single-post-comment-section .comments-pagination-area a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+
+.af-single-post-comment-section .commentlist>li:last-child{
+	margin-bottom: 0px;
+}
+
+
+.af-single-post-comment-section #respond {
+	background: #fff none repeat scroll 0 0;
+	display: inline;
+	float: left;
+	padding: 20px 20px 30px;
+	margin-top:15px;
+}
+
+
+.af-single-post-comment-section #respond .reply-title {
+  font-size: 25px;
+}
+
+
+.af-single-post-comment-section #respond .comment-notes {
+	font-size: 15px;
+}
+
+
+.af-single-post-comment-section #respond .required{
+	color: red;
+}
+
+
+.af-single-post-comment-section #respond label{
+	display: block;
+}
+
+
+.af-single-post-comment-section #respond input[type="text"],
+.af-single-post-comment-section #respond input[type="email"],
+.af-single-post-comment-section #respond input[type="url"] {
+	background-color: #f8f8f8;
+	color: #555;
+	margin-bottom: 10px;
+	height: 35px;
+	padding: 5px;
+	width: 65%;
+	border: none;
+	outline: none;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+.af-single-post-comment-section #respond textarea {
+	background-color: #f8f8f8;
+	border: none;
+	color: #555;
+	margin-bottom: 5px;
+	padding: 10px;
+	outline: none;
+	width: 100%;
+}
+
+
+.af-single-post-comment-section .form-submit input {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #000;
+	font-size: 16px;
+	margin-top: 5px;
+	padding: 8px 12px;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.af-single-post-comment-section .comment-form-cookies-consent{}
+.af-single-post-comment-section .comment-form-cookies-consent input {
+	float: left;
+	margin-right: 10px;
+	margin-top: 6px;
+}
 
 /* ==========================================================================
    Helper classes

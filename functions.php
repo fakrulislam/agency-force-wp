@@ -84,6 +84,26 @@
 endif; // agencyforcewp setup
 add_action( 'after_setup_theme', 'agencyforcewp_setup' );
 
+/**
+ * Register widget area.
+ *
+ * @link https://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+
+function afwp_widgets_areas() {
+	// Blog sidebar widget area
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'agencyforcewp' ),
+		'id'            => 'agencyforcewp_primary_sidebar',
+		'description'   => __( 'Add widgets here.', 'agencyforcewp' ),
+		'before_widget' => '<div id="%1$s" class="af-post-sidebar-item %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'afwp_widgets_areas' );
+
 /*
  * TGM Required Plugins Activation
  * Sends a push message "to install required plugins" after theme activation
