@@ -4,7 +4,7 @@
  * Desc: Outputs about page contents
  *
  * @package  		 agencyforcewp
- * @file     		 home.php
+ * @file     		 page-about.php
  * @version          1.0
  * @since            agencyforcewp 1.0
  * @author   		 MD FAKRUL ISLAM

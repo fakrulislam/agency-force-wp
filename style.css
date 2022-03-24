@@ -1174,6 +1174,12 @@ iframe{
     margin-top: -219px;
     border-radius: 10px 10px 0px 0px;
 }
+.af-blog-post-wrapper > .af-blog-post-item {
+    width: 31.4%;
+    float: left;
+    margin: 10px;
+    min-height: 800px;
+}
 .af-left-column {
     width: 68%;
     margin-right: 20px;
@@ -1235,14 +1241,28 @@ iframe{
 }
 .af-blog-posts{}
 .af-blog-posts .af-blog-post-item {
-    width: 48.5%;
+    width: 47.1%;
     float: left;
-    margin-right: 20px;
-}
-.af-blog-posts .af-blog-post-item:last-child{
-    margin-right: 0px;
+    margin: 10px;
 }
 .af-right-column .af-blog-post-item{}
+.af-post-pagination {
+    margin: 0px 0px 50px 0px;
+}
+.af-post-pagination .nav-links {
+    text-align: center;
+}
+.af-post-pagination .nav-links .current{
+    color: #000000;
+}
+.af-post-pagination .nav-links a {
+    display: inline-block;
+    color: #9e9a9a;
+    text-decoration: none;
+    padding: 10px;
+}
+.af-post-pagination .nav-links a.prev{}
+.af-post-pagination .nav-links a.next{}
 
 /*
  * Blog single page style
