@@ -1067,7 +1067,7 @@ new \Kirki\Field\Text(
   new \Kirki\Section(
 	  'afwp_footer_callout_sec',
 	  [
-		  'title'       => esc_html__( 'Footer Callout Section', 'agencyforcewp' ),
+		  'title'       => esc_html__( 'Footer Call To Action', 'agencyforcewp' ),
 		  'panel'       => 'afwp_footer_pan',
 		  'priority'    => 160,
 	  ]
@@ -1097,4 +1097,49 @@ new \Kirki\Field\Text(
   		'default'  => '',
   		'priority' => 10,
   	]
+  );
+  // footer social links & copyright
+  new \Kirki\Section(
+	'afwp_footer_social_sec',
+	[
+		'title'       => esc_html__( 'Social Links & Copyright', 'agencyforcewp' ),
+		'panel'       => 'afwp_footer_pan',
+		'priority'    => 160,
+	]
+  );
+  new \Kirki\Field\URL(
+	  [
+		  'settings' => 'afwp_footer_social_fb',
+		  'label'    => esc_html__( 'Facebook', 'agencyforcewp' ),
+		  'section'  => 'afwp_footer_social_sec',
+		  'default'  => '',
+		  'priority' => 10,
+	  ]
+  );
+  new \Kirki\Field\URL(
+	  [
+		  'settings' => 'afwp_footer_social_twitter',
+		  'label'    => esc_html__( 'Twitter', 'agencyforcewp' ),
+		  'section'  => 'afwp_footer_social_sec',
+		  'default'  => '',
+		  'priority' => 10,
+	  ]
+  );
+  new \Kirki\Field\URL(
+	  [
+		  'settings' => 'afwp_footer_social_instagram',
+		  'label'    => esc_html__( 'Instagram', 'agencyforcewp' ),
+		  'section'  => 'afwp_footer_social_sec',
+		  'default'  => '',
+		  'priority' => 10,
+	  ]
+  );
+  new \Kirki\Field\Text(
+	  [
+		  'settings' => 'afwp_footer_copyright',
+		  'label'    => esc_html__( 'Copyright Text', 'agencyforcewp' ),
+		  'section'  => 'afwp_footer_social_sec',
+		  'default'  => '',
+		  'priority' => 10,
+	  ]
   );

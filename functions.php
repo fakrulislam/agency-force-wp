@@ -101,6 +101,39 @@ function afwp_widgets_areas() {
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
+    // Footer widget areas
+	register_sidebar( array(
+		'name'          => __( 'Footer Widget 1', 'agencyforcewp' ),
+		'id'            => 'agencyforcewp_footer_widget1',
+		'before_widget' => '<div id="%1$s" class="af-footer-column %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	) );
+    register_sidebar( array(
+		'name'          => __( 'Footer Widget 2', 'agencyforcewp' ),
+		'id'            => 'agencyforcewp_footer_widget2',
+		'before_widget' => '<div id="%1$s" class="af-footer-column %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	) );
+    register_sidebar( array(
+		'name'          => __( 'Footer Widget 3', 'agencyforcewp' ),
+		'id'            => 'agencyforcewp_footer_widget3',
+		'before_widget' => '<div id="%1$s" class="af-footer-column %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	) );
+    register_sidebar( array(
+		'name'          => __( 'Footer Widget 4', 'agencyforcewp' ),
+		'id'            => 'agencyforcewp_footer_widget4',
+		'before_widget' => '<div id="%1$s" class="af-footer-column %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'afwp_widgets_areas' );
 

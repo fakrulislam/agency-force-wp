@@ -355,7 +355,8 @@ iframe{
 }
 .af-footer-column ul{}
 .af-footer-column li{}
-.af-footer-column li a{
+.af-footer-column li a,
+.af-footer-column li{
     font-size: 16px;
     line-height: 42px;
     font-weight: 400;

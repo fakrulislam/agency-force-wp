@@ -2,48 +2,41 @@
 <section class="af-footer-section">
     <div class="af-container">
         <div class="af-footer-top clearfix">
-            <div class="af-footer-column">
-                <h4>Product</h4>
-                <ul>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Benefits</a></li>
-                    <li><a href="#">Features</a></li>
-                </ul>
-            </div>
-            <div class="af-footer-column">
-                <h4>Product</h4>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="af-footer-column">
-                <h4>About us</h4>
-                <ul>
-                    <li><a href="#">Our team</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Press</a></li>
-                </ul>
-            </div>
-            <div class="af-footer-column">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="#">info@yourcompany.com</a></li>
-                    <li><a href="#">11-000-0000</a></li>
-                </ul>
-            </div>
+            <?php dynamic_sidebar('agencyforcewp_footer_widget1'); ?>
+            <?php dynamic_sidebar('agencyforcewp_footer_widget2'); ?>
+            <?php dynamic_sidebar('agencyforcewp_footer_widget3'); ?>
+            <?php dynamic_sidebar('agencyforcewp_footer_widget4'); ?>
         </div>
+
         <div class="af-footer-bottom clearfix">
             <div class="af-footer-social-links">
-                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" alt="facebook"></a>
-                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" alt="twitter"></a>
-                <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" alt="instagram"></a>
+                <?php
+                $footer_fb          = esc_url( get_theme_mod('afwp_footer_social_fb', '') );
+                $footer_twitter     = esc_url( get_theme_mod('afwp_footer_social_twitter', '') );
+                $footer_instagram   = esc_url( get_theme_mod('afwp_footer_social_instagram', '') );
+                $footer_copyright   = esc_html( get_theme_mod('afwp_footer_copyright', '') );
+                ?>
+
+                <?php if ( $footer_fb != null ): ?>
+                    <a href="<?php echo $footer_fb; ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.svg" alt="facebook"></a>
+                <?php endif; ?>
+
+                <?php if ( $footer_twitter != null ): ?>
+                    <a href="<?php echo $footer_fb; ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.svg" alt="twitter"></a>
+                <?php endif; ?>
+
+                <?php if ( $footer_instagram != null ): ?>
+                    <a href="<?php echo $footer_instagram; ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.svg" alt="instagram"></a>
+                <?php endif; ?>
+
             </div>
             <div class="af-footer-copyright">
-                <p>&copy; 2022 - All right reserved</p>
+                <?php if ( $footer_copyright != null ): ?>
+                    <p><?php echo $footer_copyright; ?></p>
+                <?php endif; ?>
             </div>
         </div>
+
     </div>
 </section> <!-- footer section-->
 
