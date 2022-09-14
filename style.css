@@ -141,6 +141,7 @@ h6{
 img{
     border:none;
     max-width: 100%;
+    height: auto;
 }
 
 iframe{
@@ -736,7 +737,6 @@ iframe{
 .af-latest-post-item img {
     width: 100%;
     border-radius: 5px 5px 0px 0px;
-    height: auto;
 }
 .af-latest-post-item h3,
 .af-latest-post-item h3 a {
