@@ -1,4 +1,4 @@
-# Agency Force WP - Creative Agency WordPress Theme
+# Creative Agency WordPress Theme - Figma to Custom Build
 
 For custom WordPress projects, I often use structured tools like [ACF Pro](https://www.advancedcustomfields.com/pro/) or [JetEngine](https://crocoblock.com/plugins/jetengine/) to build custom content types, admin workflows, and front-end templates. This allows flexibility, scalability, and easier long-term management for the business.
 
